@@ -1,3 +1,5 @@
+![CI](https://github.com/forcedotcom/assessment-bot/workflows/CI/badge.svg)
+
 # Conversational Assessments
 
 Assessments represent a conversation where a score, recommendation or feedback is provded to end users based on their responses. The goal of this project is to provide a framework for building such assessments through simplec configuration using Einstein Bots + Digital Engagement. Assessments built in this framework provide out of the box support for signal detection, reporting and transcript deletion.  
