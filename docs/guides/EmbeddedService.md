@@ -37,4 +37,4 @@
 ![Embedded](/docs/images/embedded-service/snapin-enable-guest-api.png?raw=true)
 
 
-Next Step, [Create en Embedded Chat Menu](EmbeddedChatMenu.md)
+Next Step, [Create en Embedded Channel Menu](EmbeddedChatMenu.md)

@@ -51,7 +51,7 @@ Once you've installed the Conversation Assessments package, you will need to con
 2. [Create a Chat Deployment and Chat Button](docs/guides/Chat.md)
 3. [Enable Communities and create a Community](docs/guides/Communities.md)
 4. [Create an Embedded Service Deployment](docs/guides/EmbeddedService.md)
-5. [Create en Embedded Chat Menu](docs/guides/EmbeddedChatMenu.md)
+5. [Create en Embedded Channel Menu](docs/guides/EmbeddedChatMenu.md)
 6. [Update Assessment Manager custom setting](docs/guides/CustomSetting.md)
 7. [Add a new CORS entry in your org](docs/guides/CORS.md)
 8. [Update the Assessment Bot configuration](docs/guides/BotConfig.md)
