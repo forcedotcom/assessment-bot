@@ -4,7 +4,7 @@ IMPORTANT: Make sure you've completed the Post-installation steps described [her
 
 Compared to a survey, an assessment is closer to a conversation where a score, recommendation or feedback is provided to the end user based on their responses.
 
-The Conversation Assessments package provdies a solution for delivering assessments in a conversational form through Salesforce Einstein Bots and analyzing the results using the reporting capabilities of the Salsforce Platform.
+The Conversation Assessments package provides a solution for delivering assessments in a conversational form through Salesforce Einstein Bots and analyzing the results using the reporting capabilities of the Salesforce Platform.
 
 The following guide will explain in more detail the capabilities of the solution.
 
@@ -40,11 +40,11 @@ This application provides entry points for configuring and analyzing Assessment 
 
 # Scenario
 
-Throughout this guide, we will work on creating solving a hypotetical scenario of building an assessment that can give an interpet speed recommendation for user looking to buy an internet package.  The following guide illustrates the decision tree that will be used for the assessment.
+Throughout this guide, we will work on creating solving a hypothetical scenario of building an assessment that can give an internet speed recommendation for user looking to buy an internet package.  The following guide illustrates the decision tree that will be used for the assessment.
 
 ![UserGuide](/docs/images/userguide/decision-tree.png?raw=true)
 
-This assessment will start by greeting the user with a Message, then asking for consent to continue the assessment. If not consent is given, we will redirect to a No Consent message and fire a `No Consent` signal on entry to this message and then end the chat. If user consent is given, we willl start asking 3 questions about their device and usage situation. The first question will show a couple of options, if the `12 +` option is selected, we will fire a `High Device Volume` signal and continue to the next item.
+This assessment will start by greeting the user with a Message, then asking for consent to continue the assessment. If not consent is given, we will redirect to a No Consent message and fire a `No Consent` signal on entry to this message and then end the chat. If user consent is given, we will start asking 3 questions about their device and usage situation. The first question will show a couple of options, if the `12 +` option is selected, we will fire a `High Device Volume` signal and continue to the next item.
 
 Next, we will ask a couple of True/False question to determine if the user does Streaming or Gaming and fire corresponding signals for each of these actions.  Once we have collected the signals, we will move on to doing a few decision based on the collected signals. Based on the collected signals we will show an alert to the user indicating the recommended internet speed for their use case.
 
@@ -62,7 +62,7 @@ Represents a particular signal to be analyzed as part of an Assessment Definitio
 
 ### Assessment Definition Item
 
-An Assessement Definition Item represents a step in the Assessment Definition decision tree. There different types of items : `Message`, `Alert`, `Question` and `Decision`. Each item needs a name which should be unique under an Assessment Definition. An item should indicate the next item to be executed as part of the `Next Item Name (Default Outcome)` field or as part of Question choices. If no next item name can be determined or if the Next Item Name is empty then it will be treated as an End of Chat operation.
+An Assessment Definition Item represents a step in the Assessment Definition decision tree. There are different types of items : `Message`, `Alert`, `Question` and `Decision`. Each item needs a name which should be unique under an Assessment Definition. An item should indicate the next item to be executed as part of the `Next Item Name (Default Outcome)` field or as part of Question choices. If no next item name can be determined or if the Next Item Name is empty then it will be treated as an End of Chat operation.
 
 ### Assessment Definition Item Choices
 
@@ -70,11 +70,11 @@ For Assessment Definition Items of type `Question` and where Question Type is `C
 
 ### Assessment Definition Decision Signal
 
-Assessment Definition Items of type `Decision` perform conditional logic based on the signals configured in this object. By default, the `Decision` item performs and `AND` operation of all the configured singals but this can be override by setting the `Next Item Condition Value` to `OR` in the Assessment Definition Item.
+Assessment Definition Items of type `Decision` perform conditional logic based on the signals configured in this object. By default, the `Decision` item performs and `AND` operation of all the configured signals but this can be override by setting the `Next Item Condition Value` to `OR` in the Assessment Definition Item.
 
 ### Assessment Definition Deployment
 
-This object stores a refernece to the Developer Name of the Channel Deployments on which a particular Assessment Definition should be served. It's required to have an entry here for the Assessment to be served outside of the `Preview` mode. 
+This object stores a reference to the Developer Name of the Channel Deployments on which a particular Assessment Definition should be served. It's required to have an entry here for the Assessment to be served outside of the `Preview` mode. 
 
 ### Assessment Session
 
@@ -94,15 +94,15 @@ We will create a new Assessment called `Internet Speed Assessment`.
 
 `Assessment Definition Id` : this field is required and this has to be a unique identifier across all Assessment definitions.
 
-`Active` : checkbox  used to determine if a Bot should render the Assesment or not, if this is un-checked the Bot will just end the session. You can use this to quickly disable an Assessment as part of maintenace.
+`Active` : checkbox  used to determine if a Bot should render the Assessment or not, if this is un-checked the Bot will just end the session. You can use this to quickly disable an Assessment as part of maintenance.
 
 `Delete Transcript on Completion` : this checkbox can be enabled if you don't want to use the conversation transcript in Salesforce. If this option is enabled, a schedule process that runs once a day will delete all Transcripts for Assessment Sessions that have been completed or abandoned. 
 
-`Initial Item Name` will be the name of the the first Item that will be used for the Assessment. The value you enter here must match the name of an Assessment Definition that you will create next under the Asssessment Definition.
+`Initial Item Name` will be the name of the the first Item that will be used for the Assessment. The value you enter here must match the name of an Assessment Definition that you will create next under the Assessment Definition.
 
 # Creating Assessment Definition Signals
 
-Once we have created an Assessment Definition, we will create the Signals that we want to track for the Assessment by going to the `Details` tab in our Assessment Definition and click the `New` button under the Assessment Defintion Signals section.
+Once we have created an Assessment Definition, we will create the Signals that we want to track for the Assessment by going to the `Details` tab in our Assessment Definition and click the `New` button under the Assessment Definition Signals section.
 
 For our Internet Speed Assessment scenario, we will create the following signals:
 
@@ -143,7 +143,7 @@ The Conditional Next Item Information fields will be ignored for this item since
 
 ## Question Item
 
-Question Items are steps in which we expect a user response. It's possible to conditionally select the next item based on a user response or fire specific signals when sepcific a specific choice for a question is selected. We'll cover the different types of question below.
+Question Items are steps in which we expect a user response. It's possible to conditionally select the next item based on a user response or fire specific signals when a specific choice for a question is selected. We'll cover the different types of question below.
 
 ### True False
 
@@ -290,7 +290,7 @@ To deploy your assessment first you need to make sure the channel deployment has
 Once the channel has been configured you just need to know the Developer Name of channel and configure it as part of your Assessment Definition Deployments. The following steps demonstrate how to setup a Web channel deployment and how to configure your Assessment Definition to use this Web channel deployment.
 
 
-## Setup your Channnel Deployment 
+## Setup your Channel Deployment 
 
 #### Create your Channel Deployment
 
@@ -352,9 +352,9 @@ Go to your community and validate the deployment renders correctly and that when
 
 ## Import/Export Assessment Definitions
 
-It's possible to export and import assessment definitions from one org into another. To do this, go to the Assessment Import/Export tab in the Assessment Managet application.
+It's possible to export and import assessment definitions from one org into another. To do this, go to the Assessment Import/Export tab in the Assessment Management application.
 
-To export an Assessment Definition, go to the "Export" tab, select a definition from the dropdown cand lick the "Export" button. An importable JSON text will show up in the text are above, which you can copy manually or by clicking the "Copy" button.
+To export an Assessment Definition, go to the "Export" tab, select a definition from the dropdown and click the "Export" button. An importable JSON text will show up in the text are above, which you can copy manually or by clicking the "Copy" button.
 
 ```NOTE: You can't re-import an Assessment Definition in the same org unless you change the Assessment Definition Id since this has to be unique in the org.```
 
