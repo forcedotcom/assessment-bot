@@ -1,0 +1,54 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Decision_Signal__c",
+                "referenceId": "Assessment_Definition_Decision_Signal__cRef1"
+            },
+            "Assessment_Definition_Item__c": "@Assessment_Definition_Item__cRef5",
+            "Assessment_Definition_Signal__c": "@Assessment_Definition_Signal__cRef1",
+            "Order__c": 1,
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Decision_Signal__c",
+                "referenceId": "Assessment_Definition_Decision_Signal__cRef2"
+            },
+            "Assessment_Definition_Item__c": "@Assessment_Definition_Item__cRef5",
+            "Assessment_Definition_Signal__c": "@Assessment_Definition_Signal__cRef6",
+            "Order__c": 2,
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Decision_Signal__c",
+                "referenceId": "Assessment_Definition_Decision_Signal__cRef3"
+            },
+            "Assessment_Definition_Item__c": "@Assessment_Definition_Item__cRef10",
+            "Assessment_Definition_Signal__c": "@Assessment_Definition_Signal__cRef1",
+            "Order__c": 1,
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Decision_Signal__c",
+                "referenceId": "Assessment_Definition_Decision_Signal__cRef4"
+            },
+            "Assessment_Definition_Item__c": "@Assessment_Definition_Item__cRef4",
+            "Assessment_Definition_Signal__c": "@Assessment_Definition_Signal__cRef7",
+            "Order__c": 1,
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Decision_Signal__c",
+                "referenceId": "Assessment_Definition_Decision_Signal__cRef5"
+            },
+            "Assessment_Definition_Item__c": "@Assessment_Definition_Item__cRef8",
+            "Assessment_Definition_Signal__c": "@Assessment_Definition_Signal__cRef7",
+            "Order__c": 1,
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1"
+        }
+    ]
+}

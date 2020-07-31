@@ -1,0 +1,50 @@
+[
+    {
+        "sobject": "Assessment_Definition__c",
+        "saveRefs": true,
+        "resolveRefs": false,
+        "files": [
+            "speed_assess-Assessment_Definition__cs.json"
+        ]
+    },
+    {
+        "sobject": "Assessment_Definition_Signal__c",
+        "saveRefs": true,
+        "resolveRefs": true,
+        "files": [
+            "speed_assess-Assessment_Definition_Signal__cs.json"
+        ]
+    },
+    {
+        "sobject": "Assessment_Definition_Item__c",
+        "saveRefs": true,
+        "resolveRefs": true,
+        "files": [
+            "speed_assess-Assessment_Definition_Item__cs.json"
+        ]
+    },
+    {
+        "sobject": "Assessment_Definition_Decision_Signal__c",
+        "saveRefs": false,
+        "resolveRefs": true,
+        "files": [
+            "speed_assess-Assessment_Definition_Decision_Signal__cs.json"
+        ]
+    },
+    {
+        "sobject": "Assessment_Definition_Item_Choice__c",
+        "saveRefs": false,
+        "resolveRefs": true,
+        "files": [
+            "speed_assess-Assessment_Definition_Item_Choice__cs.json"
+        ]
+    },
+    {
+        "sobject": "Assessment_Definition_Item_Event__c",
+        "saveRefs": true,
+        "resolveRefs": true,
+        "files": [
+            "speed_assess-Assessment_Definition_Item_Event__cs.json"
+        ]
+    }
+]

@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Snapins_Case_PrechatQuickAction_08h2F00000000ES_1590732865295</description>
+    <fieldOverrides>
+        <field>Origin</field>
+        <literalValue>Web</literalValue>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>Status</field>
+        <literalValue>New</literalValue>
+    </fieldOverrides>
+    <label>Snapins_Case_PrechatQuickAction_08h2F00000000ES_1590732865295</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsTopToBottom</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>Subject</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>SuppliedEmail</field>
+                <uiBehavior>Edit</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns/>
+    </quickActionLayout>
+    <targetObject>Case</targetObject>
+    <type>Create</type>
+</QuickAction>

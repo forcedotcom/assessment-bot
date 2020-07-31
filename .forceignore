@@ -1,0 +1,44 @@
+# List files or directories below to ignore them when running force:source:push, force:source:pull, and force:source:status
+# More information: https://developer.salesforce.com/docs/atlas.en-us.sfdx_dev.meta/sfdx_dev/sfdx_dev_exclude_source.htm
+#
+
+package.xml
+
+# LWC configuration files
+**/jsconfig.json
+**/.eslintrc.json
+
+# LWC Jest
+**/__tests__/**
+
+**/Einstein_Platform_Services_Certificate.crt
+**/Einstein_Platform_Services_Certificate.crt-meta.xml
+**/AppSwitcher.appMenu-meta.xml
+
+**/sfdc_chatbot_service_permset.permissionset-meta.xml
+**/EinsteinBotsV2.wapp*
+**/EinsteinBotsV2.wdash*
+**/EinsteinBotsV2.wdf*
+**/EinsteinBotsV2.wds*
+**/EinsteinBotsV21.xmd*
+**/EinsteinBotsV2_EinsteinBotsV2Dataflow.wdf
+**/EinsteinBotsV2_EinsteinBotsV2Dataflow.wdf-meta.xml
+
+# scren flows default metadata
+**/flow_screen_prebuilt_report.report-meta.xml
+**/screen_flows_prebuilt_crt.reportType-meta.xml
+
+
+# service console flexipages
+**/LightningService_UtilityBar.flexipage-meta.xml
+
+# Ignored community profile due to issues when deploying to certain non-scratch org editions
+**/bots-examples Profile.profile-meta.xml
+**/*.audience
+**/*.audience-meta.xml
+**/Default_bots-examples.audience-meta.xml
+**/Admin.profile-meta.xml
+
+**/Trial Customer Portal User.profile-meta.xml
+**/*.corsWhitelistOrigin-meta.xml
+**/*.settings-meta.xml

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Operator_Without_Value_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>!ISBLANK(TEXT(Next_Item_Condition_Operator__c) ) &amp;&amp; ISBLANK( Next_Item_Outcome_Condition__c )</errorConditionFormula>
+    <errorDisplayField>Next_Item_Outcome_Condition__c</errorDisplayField>
+    <errorMessage>Condition Value is required when setting an operator</errorMessage>
+</ValidationRule>

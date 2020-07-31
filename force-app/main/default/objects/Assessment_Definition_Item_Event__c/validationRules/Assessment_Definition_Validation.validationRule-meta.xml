@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Assessment_Definition_Validation</fullName>
+    <active>true</active>
+    <errorConditionFormula>!ISBLANK(Assessment_Definition__c) &amp;&amp;
+Assessment_Definition__c != Assessment_Definition_Item__r.Assessment_Definition__c</errorConditionFormula>
+    <errorMessage>Assessment Definition must match the parent item definition</errorMessage>
+</ValidationRule>

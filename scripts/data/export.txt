@@ -1,0 +1,1 @@
+sfdx force:data:tree:export -q ./scripts/data/export-definitions.soql --prefix covid19 --outputdir sfdx-out --plan

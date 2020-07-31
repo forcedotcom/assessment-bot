@@ -1,0 +1,12 @@
+{
+    "FirstName": "Einstein",
+    "LastName": "Bot",
+    "Email": "einsteinbot@botssfdx.org",
+    "Alias": "ebot",
+    "TimeZoneSidKey": "America/Los_Angeles",
+    "LocaleSidKey": "en_US",
+    "EmailEncodingKey": "UTF-8",
+    "LanguageLocaleKey": "en_US",
+    "profileName": "Standard Platform User",
+    "generatePassword": true
+}

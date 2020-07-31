@@ -1,0 +1,34 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Item_Event__c",
+                "referenceId": "Assessment_Definition_Item_Event__cRef1"
+            },
+            "Assessment_Definition_Item__c": "@Assessment_Definition_Item__cRef12",
+            "Type__c": "On Entry",
+            "Assessment_Definition_Signal__c": "@Assessment_Definition_Signal__cRef1",
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Item_Event__c",
+                "referenceId": "Assessment_Definition_Item_Event__cRef2"
+            },
+            "Assessment_Definition_Item__c": "@Assessment_Definition_Item__cRef3",
+            "Type__c": "On Entry",
+            "Assessment_Definition_Signal__c": "@Assessment_Definition_Signal__cRef3",
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Item_Event__c",
+                "referenceId": "Assessment_Definition_Item_Event__cRef3"
+            },
+            "Assessment_Definition_Item__c": "@Assessment_Definition_Item__cRef17",
+            "Type__c": "On Entry",
+            "Assessment_Definition_Signal__c": "@Assessment_Definition_Signal__cRef2",
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1"
+        }
+    ]
+}

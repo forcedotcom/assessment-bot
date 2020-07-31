@@ -1,0 +1,1 @@
+sfdx force:data:tree:import --plan sfdx-out/covid19-Assessment_Definition__c-Assessment_Definition_Signal__c-Assessment_Definition_Item__c-Assessment_Definition_Item_Choice__c-Assessment_Definition_Item_Event__c-plan.json

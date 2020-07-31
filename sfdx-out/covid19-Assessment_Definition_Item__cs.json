@@ -1,0 +1,242 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Item__c",
+                "referenceId": "Assessment_Definition_Item__cRef1"
+            },
+            "Name": "Test_Choice",
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1",
+            "Message__c": "Select a choice",
+            "Next_Item_Name__c": "C19_No_Action",
+            "Question_Type__c": "Choices",
+            "Type__c": "Question"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Item__c",
+                "referenceId": "Assessment_Definition_Item__cRef2"
+            },
+            "Name": "C19_Consent",
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1",
+            "Message__c": "I’m not a substitute for professional medical advice, diagnosis, or treatment. Always consult a medical professional for serious symptoms or emergencies.The COVID-19 self-assessment can guide you in seeking appropriate medical care. Do you agree?",
+            "Next_Item_Name__c": "C19_Symptom_Screen1",
+            "Next_Item_Name_Other_Outcome__c": "C19_No_Consent",
+            "Next_Item_Outcome_Condition__c": "true",
+            "Question_Type__c": "TrueOrFalse",
+            "Type__c": "Question",
+            "Next_Item_Condition_Operator__c": "Equal To"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Item__c",
+                "referenceId": "Assessment_Definition_Item__cRef3"
+            },
+            "Name": "C19_No_Consent",
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1",
+            "Message__c": "Ok, since you don't consent to this assessment the session will now be ended. Thank you!",
+            "Type__c": "Message"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Item__c",
+                "referenceId": "Assessment_Definition_Item__cRef4"
+            },
+            "Name": "C19_Initial_Message",
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1",
+            "Message__c": "If you're experiencing a medical emergency, call 911 or your local emergency number.",
+            "Next_Item_Name__c": "C19_Greeting",
+            "Type__c": "Message"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Item__c",
+                "referenceId": "Assessment_Definition_Item__cRef5"
+            },
+            "Name": "C19_Symptom_Screen6",
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1",
+            "Message__c": "In the last 14 days, have you had contact with the following individuals?\r\n- Someone diagnosed with COVID-19\r\n- Someone who works in a public setting like a healthcare facility or a grocery store",
+            "Next_Item_Name__c": "C19_Symptomatic",
+            "Next_Item_Name_Other_Outcome__c": "C19_Symptom_Screen7",
+            "Next_Item_Outcome_Condition__c": "true",
+            "Question_Type__c": "TrueOrFalse",
+            "Type__c": "Question",
+            "Next_Item_Condition_Operator__c": "Equal To"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Item__c",
+                "referenceId": "Assessment_Definition_Item__cRef6"
+            },
+            "Name": "C19_Greeting_2",
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1",
+            "Message__c": "The COVID-19 self-assessment can guide you in seeking appropriate medical care. This risk assessment isn’t meant to take the place of consultation with your healthcare provider or to diagnose or treat conditions, including COVID-19.",
+            "Next_Item_Name__c": "C19_Consent",
+            "Type__c": "Message"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Item__c",
+                "referenceId": "Assessment_Definition_Item__cRef7"
+            },
+            "Name": "C19_Symptom_Screen3",
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1",
+            "Message__c": "Do you have any of these additional symptoms?\r\n- A fever or temperature greater than 100.4 F\r\n- Moderate to severe breathing problems\r\n- Abnormally tired or fatigued",
+            "Next_Item_Name__c": "C19_Symptom_Screen4",
+            "Next_Item_Name_Other_Outcome__c": "C19_Call_911",
+            "Next_Item_Outcome_Condition__c": "false",
+            "Question_Type__c": "TrueOrFalse",
+            "Type__c": "Question",
+            "Next_Item_Condition_Operator__c": "Equal To"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Item__c",
+                "referenceId": "Assessment_Definition_Item__cRef8"
+            },
+            "Name": "C19_Call_911",
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1",
+            "Message__c": "Emergency: Call 911. You may be having a medical emergency. Call 911 now. You need immediate medical attention.\r\nTell the 911 operator if you’ve been in contact with someone with COVID-19 or if you’ve been to a place where COVID-19 is spreading.",
+            "Type__c": "Alert"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Item__c",
+                "referenceId": "Assessment_Definition_Item__cRef9"
+            },
+            "Name": "C19_Symptom_Screen5",
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1",
+            "Message__c": "Are you 65 or over?",
+            "Next_Item_Name__c": "C19_Symptomatic",
+            "Next_Item_Name_Other_Outcome__c": "C19_Symptom_Screen6",
+            "Next_Item_Outcome_Condition__c": "true",
+            "Question_Type__c": "TrueOrFalse",
+            "Type__c": "Question",
+            "Next_Item_Condition_Operator__c": "Equal To"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Item__c",
+                "referenceId": "Assessment_Definition_Item__cRef10"
+            },
+            "Name": "C19_Symptomatic_2",
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1",
+            "Message__c": "To book an appointment with our COVID-19 care team, <a href='/health/s/appointment'>click here</a>",
+            "Type__c": "Alert"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Item__c",
+                "referenceId": "Assessment_Definition_Item__cRef11"
+            },
+            "Name": "C19_Symptom_Screen7_2",
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1",
+            "Message__c": "- Lived in or visited a place where COVID-19 is spreading\r\n- Traveled domestically, internationally, or been on a cruise ship\r\n- Visited a public place with many people like a healthcare facility or a grocery store",
+            "Next_Item_Name__c": "C19_Symptomatic",
+            "Next_Item_Name_Other_Outcome__c": "C19_No_Action",
+            "Next_Item_Outcome_Condition__c": "true",
+            "Question_Type__c": "TrueOrFalse",
+            "Type__c": "Question",
+            "Next_Item_Condition_Operator__c": "Equal To"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Item__c",
+                "referenceId": "Assessment_Definition_Item__cRef12"
+            },
+            "Name": "C19_No_Action",
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1",
+            "Message__c": "You don’t require COVID-19 testing.\r\nBased on your responses, there’s no evidence that you have symptoms of COVID-19. Stay healthy by practicing social distancing to reduce community transmission and follow guidance from your local officials.",
+            "Next_Item_Name__c": "C19_No_Action_2",
+            "Type__c": "Message"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Item__c",
+                "referenceId": "Assessment_Definition_Item__cRef13"
+            },
+            "Name": "C19_Symptom_Screen1",
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1",
+            "Message__c": "Do you have any of these symptoms?\r\n- Extreme difficulty breathing\r\n- Severe chest pain or pressure in your chest\r\n- Face or lips turning blue",
+            "Next_Item_Name__c": "C19_Symptom_Screen2",
+            "Next_Item_Name_Other_Outcome__c": "C19_Call_911",
+            "Next_Item_Outcome_Condition__c": "false",
+            "Question_Type__c": "TrueOrFalse",
+            "Type__c": "Question",
+            "Next_Item_Condition_Operator__c": "Equal To"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Item__c",
+                "referenceId": "Assessment_Definition_Item__cRef14"
+            },
+            "Name": "C19_Symptom_Screen4",
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1",
+            "Message__c": "Do you have any of these additional symptoms?\r\n- Muscle or body aches\r\n- Persistent cough\r\n- Sore throat",
+            "Next_Item_Name__c": "C19_Symptom_Screen5",
+            "Next_Item_Name_Other_Outcome__c": "C19_Symptom_Screen6",
+            "Next_Item_Outcome_Condition__c": "true",
+            "Question_Type__c": "TrueOrFalse",
+            "Type__c": "Question",
+            "Next_Item_Condition_Operator__c": "Equal To"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Item__c",
+                "referenceId": "Assessment_Definition_Item__cRef15"
+            },
+            "Name": "C19_Symptom_Screen2",
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1",
+            "Message__c": "Do you have any of these symptoms?\r\n- Severe, constant dizziness or lightheadedness\r\n- Sudden confusion (new or worsening)\r\n- Episodes of fainting or having trouble waking up",
+            "Next_Item_Name__c": "C19_Symptom_Screen3",
+            "Next_Item_Name_Other_Outcome__c": "C19_Call_911",
+            "Next_Item_Outcome_Condition__c": "false",
+            "Question_Type__c": "TrueOrFalse",
+            "Type__c": "Question",
+            "Next_Item_Condition_Operator__c": "Equal To"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Item__c",
+                "referenceId": "Assessment_Definition_Item__cRef16"
+            },
+            "Name": "C19_Symptom_Screen7",
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1",
+            "Message__c": "In the last 14 days, have you done any of the following?",
+            "Next_Item_Name__c": "C19_Symptom_Screen7_2",
+            "Type__c": "Message"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Item__c",
+                "referenceId": "Assessment_Definition_Item__cRef17"
+            },
+            "Name": "C19_Symptomatic",
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1",
+            "Message__c": "Alert: You may be infected or have a risk for infection. Because you may be infected, please isolate yourself from others. Don’t go to public places, stay at home, and don’t have any visitors. Book an appointment immediately.",
+            "Next_Item_Name__c": "C19_Symptomatic_2",
+            "Type__c": "Message"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Item__c",
+                "referenceId": "Assessment_Definition_Item__cRef18"
+            },
+            "Name": "C19_Greeting",
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1",
+            "Message__c": "Hi, I am Sara.",
+            "Next_Item_Name__c": "C19_Greeting_2",
+            "Type__c": "Message"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Item__c",
+                "referenceId": "Assessment_Definition_Item__cRef19"
+            },
+            "Name": "C19_No_Action_2",
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1",
+            "Message__c": "If your symptoms change or worsen, take this assessment again.",
+            "Type__c": "Alert"
+        }
+    ]
+}

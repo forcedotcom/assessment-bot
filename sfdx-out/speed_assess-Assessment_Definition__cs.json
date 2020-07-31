@@ -1,0 +1,14 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Assessment_Definition__c",
+                "referenceId": "Assessment_Definition__cRef1"
+            },
+            "Name": "Internet Speed Assessment",
+            "Assessment_Definition_Id__c": "Internet Speed Assessment",
+            "Active__c": true,
+            "Initial_Item_Name__c": "Initial Message"
+        }
+    ]
+}

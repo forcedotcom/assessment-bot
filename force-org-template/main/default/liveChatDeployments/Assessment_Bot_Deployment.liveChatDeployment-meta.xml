@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LiveChatDeployment xmlns="http://soap.sforce.com/2006/04/metadata">
+    <connectionTimeoutDuration>0</connectionTimeoutDuration>
+    <connectionWarningDuration>0</connectionWarningDuration>
+    <displayQueuePosition>false</displayQueuePosition>
+    <enablePrechatApi>false</enablePrechatApi>
+    <enableTranscriptSave>false</enableTranscriptSave>
+    <label>Assessment Bot Deployment</label>
+    <windowTitle>Assessment Bot</windowTitle>
+</LiveChatDeployment>

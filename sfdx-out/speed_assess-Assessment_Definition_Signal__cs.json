@@ -1,0 +1,76 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Signal__c",
+                "referenceId": "Assessment_Definition_Signal__cRef1"
+            },
+            "Name": "Gaming",
+            "Internal_Signal__c": true,
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Signal__c",
+                "referenceId": "Assessment_Definition_Signal__cRef2"
+            },
+            "Name": "No Consent",
+            "Internal_Signal__c": false,
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Signal__c",
+                "referenceId": "Assessment_Definition_Signal__cRef3"
+            },
+            "Name": "1000 Mbps",
+            "Internal_Signal__c": false,
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Signal__c",
+                "referenceId": "Assessment_Definition_Signal__cRef4"
+            },
+            "Name": "600 Mbps",
+            "Internal_Signal__c": false,
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Signal__c",
+                "referenceId": "Assessment_Definition_Signal__cRef5"
+            },
+            "Name": "100 Mbps",
+            "Internal_Signal__c": false,
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Signal__c",
+                "referenceId": "Assessment_Definition_Signal__cRef6"
+            },
+            "Name": "Streaming",
+            "Internal_Signal__c": true,
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Signal__c",
+                "referenceId": "Assessment_Definition_Signal__cRef7"
+            },
+            "Name": "High Device Volume",
+            "Internal_Signal__c": true,
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Signal__c",
+                "referenceId": "Assessment_Definition_Signal__cRef8"
+            },
+            "Name": "300 Mbps",
+            "Internal_Signal__c": false,
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1"
+        }
+    ]
+}

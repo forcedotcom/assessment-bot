@@ -1,0 +1,84 @@
+<apex:page controller="AssessmentDefinitionImportExportCtrl" docType="html-5.0" lightningStylesheets="true" applyHtmlTag="false" showHeader="false">
+<html xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+
+    <head>
+        <title>Assessment Import/Export</title>
+
+        <style>
+            body .bPageBlock, .slds-vf-scope .bPageBlock {
+                margin-bottom:0;
+            }
+            div.actionButtons {
+                padding:10px 0;
+            }
+        </style>
+    
+        <script>
+            function showTab(tabName, element){
+                if (tabName=='first_tab') {
+                    document.getElementById('second_tab_header').classList.remove('slds-is-active');
+                    document.getElementById('first_tab_header').classList.add('slds-is-active');
+                        
+                    document.getElementById('second_tab').classList.remove('slds-show');
+                    document.getElementById('second_tab').classList.add('slds-hide');
+                    
+                    document.getElementById('first_tab').classList.remove('slds-hide');
+                    document.getElementById('first_tab').classList.add('slds-show');
+                } else {
+                    document.getElementById('first_tab_header').classList.remove('slds-is-active');
+                    document.getElementById('second_tab_header').classList.add('slds-is-active');
+                        
+                    document.getElementById('first_tab').classList.remove('slds-show');
+                    document.getElementById('first_tab').classList.add('slds-hide');
+                    document.getElementById('second_tab').classList.remove('slds-hide');
+                    document.getElementById('second_tab').classList.add('slds-show');
+                }
+            }
+
+            function copyToClipboard() {
+                document.querySelector(".defExportTextArea").select();
+                document.execCommand('copy');
+            }
+        </script>
+    </head>
+
+    <body>
+        <apex:slds />
+
+        <div class="slds-scope">
+            <apex:form id="theForm">
+                <apex:pageBlock>
+                    <apex:pageMessages/>
+                    <div class="slds-tabs_default slds-tabs_card">
+                        <ul class="slds-tabs_default__nav" role="tablist">
+                        <li class="slds-tabs_default__item slds-is-active" title="Export" role="presentation" id="first_tab_header">
+                            <a class="slds-tabs_default__link" href="javascript:showTab('first_tab',this);" role="tab" tabindex="0" aria-selected="true" aria-controls="tab-default-1">Export</a>
+                        </li>
+                        <li class="slds-tabs_default__item" title="Import" role="presentation" id="second_tab_header">
+                            <a class="slds-tabs_default__link" href="javascript:showTab('second_tab',this);" role="tab" tabindex="-1" aria-selected="false" aria-controls="tab-default-2">Import</a>
+                        </li>
+                        </ul>
+                        <div id="first_tab" class="slds-tabs_default__content slds-show" role="tabpanel" aria-labelledby="first_tab_header">
+                            <apex:inputTextArea value="{!exportJSON}" style="height:600px;width:90%;" styleClass="defExportTextArea"/>
+                            <div class="actionButtons">
+                                <apex:selectList value="{!selectedDefinition}" multiselect="false" size="1">
+                                    <apex:selectOptions value="{!definitions}"/>
+                                </apex:selectList>
+                                <apex:commandButton value="Export" action="{!doExport}" styleClass="slds-button slds-button--brand"/>
+                                <apex:commandButton value="Copy" onclick="copyToClipboard()"  onComplete="return null;"/>
+                            </div>
+                        </div>
+                        <div id="second_tab" class="slds-tabs_default__content slds-hide" role="tabpanel" aria-labelledby="second_tab_header">
+                            <apex:inputTextArea value="{!importJSON}" style="height:600px;width:90%;"/>
+                            <div class="actionButtons" >
+                                <apex:commandButton value="Import" action="{!doImport}" styleClass="slds-button slds-button--brand"/>
+                            </div>
+                        </div>
+                    </div>
+                </apex:pageBlock>
+            </apex:form>
+        </div>
+    </body>
+
+</html>
+</apex:page>

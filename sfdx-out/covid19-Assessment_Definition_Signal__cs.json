@@ -1,0 +1,31 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Signal__c",
+                "referenceId": "Assessment_Definition_Signal__cRef1"
+            },
+            "Name": "Non-Symptomatic",
+            "Internal_Signal__c": false,
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Signal__c",
+                "referenceId": "Assessment_Definition_Signal__cRef2"
+            },
+            "Name": "Symptomatic",
+            "Internal_Signal__c": false,
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Signal__c",
+                "referenceId": "Assessment_Definition_Signal__cRef3"
+            },
+            "Name": "No Consent",
+            "Internal_Signal__c": false,
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1"
+        }
+    ]
+}

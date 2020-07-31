@@ -1,0 +1,16 @@
+SELECT Id, Name, Assessment_Definition_Id__c, Active__c, Initial_Item_Name__c,
+(SELECT Id, Name, Internal_Signal__c
+    FROM Assessment_Definition_Signals__r),
+(SELECT Id, Name, Assessment_Definition__c, Message__c,
+        Next_Item_Name__c, Next_Item_Name_Other_Outcome__c, Next_Item_Outcome_Condition__c,
+        Question_Type__c, Type__c, Next_Item_Condition_Operator__c
+    FROM Assessment_Definition_Items__r),
+(SELECT Id, Assessment_Definition_Item__c, Assessment_Definition_Signal__c,
+        Order__c
+    FROM Assessment_Definition_Decision_Signals__r),
+(SELECT Id, Assessment_Definition_Item__c, Label__c, Value__c,
+    Order__c, Next_Item_Name__c, Assessment_Definition_Signal__c
+    FROM Assessment_Definition_Item_Choices__r),
+(SELECT Id, Assessment_Definition_Item__c, Type__c, Assessment_Definition_Signal__c
+    FROM Assessment_Definition_Item_Events__r)
+FROM Assessment_Definition__c where Assessment_Definition_Id__c = 'Covid19_Symptoms'

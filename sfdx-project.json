@@ -1,0 +1,30 @@
+{
+    "packageDirectories": [
+        {
+            "path": "force-app",
+            "default": false,
+            "package": "Conversational Assessments",
+            "versionName": "Summer 20",
+            "versionDescription": "Conversational Assessments",
+            "versionNumber": "1.0.5.NEXT",
+            "definitionFile": "config/project-scratch-def.json"
+        },
+        {
+            "path": "force-org-template",
+            "default": true
+        }
+    ],
+    "namespace": "",
+    "sfdcLoginUrl": "https://login.salesforce.com",
+    "sourceApiVersion": "48.0",
+    "packageAliases": {
+        "Conversational Assessments": "0Ho4R000000fxTESAY",
+        "Conversational Assessments@1.0.0-1": "04t4R000001lcLfQAI",
+        "Conversational Assessments@1.0.0-2": "04t4R000001lcLpQAI",
+        "Conversational Assessments@1.0.1-1": "04t4R000001lcLuQAI",
+        "Conversational Assessments@1.0.2-1": "04t4R000001lcLzQAI",
+        "Conversational Assessments@1.0.3-1": "04t4R000001lcMJQAY",
+        "Conversational Assessments@1.0.4-1": "04t4R000001lcMOQAY",
+        "Conversational Assessments@1.0.5-1": "04t4R0000019RH6QAM"
+    }
+}

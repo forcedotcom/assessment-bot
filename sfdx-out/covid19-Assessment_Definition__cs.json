@@ -1,0 +1,14 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Assessment_Definition__c",
+                "referenceId": "Assessment_Definition__cRef1"
+            },
+            "Name": "Covid19 Symptoms",
+            "Assessment_Definition_Id__c": "Covid19_Symptoms",
+            "Active__c": true,
+            "Initial_Item_Name__c": "C19_Initial_Message"
+        }
+    ]
+}

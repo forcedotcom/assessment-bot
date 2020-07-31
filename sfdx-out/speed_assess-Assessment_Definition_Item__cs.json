@@ -1,0 +1,164 @@
+{
+    "records": [
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Item__c",
+                "referenceId": "Assessment_Definition_Item__cRef1"
+            },
+            "Name": "Initial Message",
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1",
+            "Message__c": "Hi, i'm in the internet speed assessor bot",
+            "Next_Item_Name__c": "Consent Question",
+            "Type__c": "Message"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Item__c",
+                "referenceId": "Assessment_Definition_Item__cRef2"
+            },
+            "Name": "Gaming Question",
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1",
+            "Message__c": "Do you do online gaming?",
+            "Next_Item_Name__c": "Gaming and Streaming Decision",
+            "Question_Type__c": "TrueOrFalse",
+            "Type__c": "Question"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Item__c",
+                "referenceId": "Assessment_Definition_Item__cRef3"
+            },
+            "Name": "Device Number Question",
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1",
+            "Message__c": "How many devices connect to your network at a time?",
+            "Next_Item_Name__c": "Streaming Question",
+            "Question_Type__c": "Choices",
+            "Type__c": "Question"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Item__c",
+                "referenceId": "Assessment_Definition_Item__cRef4"
+            },
+            "Name": "Gaming High Device Volume Decision",
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1",
+            "Next_Item_Name__c": "1000 Mbps Recommendation",
+            "Next_Item_Name_Other_Outcome__c": "600 Mbps Recommendation",
+            "Next_Item_Outcome_Condition__c": "AND",
+            "Type__c": "Decision"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Item__c",
+                "referenceId": "Assessment_Definition_Item__cRef5"
+            },
+            "Name": "Gaming and Streaming Decision",
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1",
+            "Next_Item_Name__c": "1000 Mbps Recommendation",
+            "Next_Item_Name_Other_Outcome__c": "Gaming Decision",
+            "Next_Item_Outcome_Condition__c": "AND",
+            "Type__c": "Decision"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Item__c",
+                "referenceId": "Assessment_Definition_Item__cRef6"
+            },
+            "Name": "Streaming Question",
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1",
+            "Message__c": "Do you stream shows and movies?",
+            "Next_Item_Name__c": "Gaming Question",
+            "Question_Type__c": "TrueOrFalse",
+            "Type__c": "Question"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Item__c",
+                "referenceId": "Assessment_Definition_Item__cRef7"
+            },
+            "Name": "1000 Mbps Recommendation",
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1",
+            "Message__c": "We recommend you use a 1000 Mbps Connection",
+            "Type__c": "Alert"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Item__c",
+                "referenceId": "Assessment_Definition_Item__cRef8"
+            },
+            "Name": "No Gaming High Device Volume Decision",
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1",
+            "Next_Item_Name__c": "300 Mbps Recommendation",
+            "Next_Item_Name_Other_Outcome__c": "100 Mbps Recommendation",
+            "Next_Item_Outcome_Condition__c": "AND",
+            "Type__c": "Decision"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Item__c",
+                "referenceId": "Assessment_Definition_Item__cRef9"
+            },
+            "Name": "No Consent Message",
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1",
+            "Message__c": "Ok, thank you",
+            "Type__c": "Message"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Item__c",
+                "referenceId": "Assessment_Definition_Item__cRef10"
+            },
+            "Name": "Gaming Decision",
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1",
+            "Next_Item_Name__c": "Gaming High Device Volume Decision",
+            "Next_Item_Name_Other_Outcome__c": "No Gaming High Device Volume Decision",
+            "Next_Item_Outcome_Condition__c": "AND",
+            "Type__c": "Decision"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Item__c",
+                "referenceId": "Assessment_Definition_Item__cRef11"
+            },
+            "Name": "300 Mbps Recommendation",
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1",
+            "Message__c": "We recommend a 300 Mbps connection",
+            "Type__c": "Alert"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Item__c",
+                "referenceId": "Assessment_Definition_Item__cRef12"
+            },
+            "Name": "100 Mbps Recommendation",
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1",
+            "Message__c": "We recommend a 100 Mbps connection",
+            "Type__c": "Alert"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Item__c",
+                "referenceId": "Assessment_Definition_Item__cRef13"
+            },
+            "Name": "600 Mbps Recommendation",
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1",
+            "Message__c": "We recommend a 600 Mbps connection",
+            "Type__c": "Alert"
+        },
+        {
+            "attributes": {
+                "type": "Assessment_Definition_Item__c",
+                "referenceId": "Assessment_Definition_Item__cRef14"
+            },
+            "Name": "Consent Question",
+            "Assessment_Definition__c": "@Assessment_Definition__cRef1",
+            "Message__c": "Would you like to take the Assessment?",
+            "Next_Item_Name__c": "Device Number Question",
+            "Next_Item_Name_Other_Outcome__c": "No Consent Message",
+            "Next_Item_Outcome_Condition__c": "true",
+            "Question_Type__c": "TrueOrFalse",
+            "Type__c": "Question",
+            "Next_Item_Condition_Operator__c": "Equal To"
+        }
+    ]
+}

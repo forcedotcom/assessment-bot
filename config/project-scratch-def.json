@@ -1,0 +1,48 @@
+{
+  "orgName": "Rico",
+  "edition": "Enterprise",
+  "features": [
+      "Communities",
+      "Sites",
+      "ServiceCloud",
+      "LightningServiceConsole",
+      "LiveAgent",
+      "LiveMessage",
+      "Chatbot",
+      "Knowledge",
+      "DevelopmentWave",
+      "ForceComPlatform",
+      "AddCustomTabs:20",
+      "AddCustomObjects:20",
+      "AddCustomApps:20",
+      "ChatbotEinsteinPilot"
+  ],
+  "settings": {
+      "liveAgentSettings": {
+          "enableLiveAgent": true
+      },
+      "botSettings": {
+          "enableBots": true
+      },
+      "omniChannelSettings": {
+          "enableOmniChannel": true
+      },
+      "caseSettings": {
+          "systemUserEmail": "support@acme.com"
+      },
+      "knowledgeSettings":{
+          "enableKnowledge": true
+      },
+      "communitiesSettings": {
+          "enableNetworksEnabled": true
+      },
+      "lightningExperienceSettings": {
+          "enableS1DesktopEnabled": true
+      },
+      "securitySettings": {
+          "passwordPolicies": {
+              "enableSetPasswordInApi": true
+          }
+      }
+  }
+}
