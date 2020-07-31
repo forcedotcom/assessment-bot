@@ -22,16 +22,26 @@ Once you go to that link it will guide through the setup process. Select the "In
 
 ![Package Install Wizard2](/docs/images/package/install-2.png?raw=true)
 
-#### Method 2 : Non-Scratch Org quick deploy
+#### Method 2 : Scratch Org quick deploy
 
-<a href="https://githubsfdeploy.herokuapp.com">
-  <img alt="Deploy to Salesforce"
-       src="https://raw.githubusercontent.com/afawcett/githubsfdeploy/master/deploy.png">
-</a>
+[![Deploy](https://deploy-to-sfdx.com/dist/assets/images/DeployToSFDX.svg)](https://deploy-to-sfdx.com/)
 
 #### Method 3 : Scratch Org quick deploy
 
-[![Deploy](https://deploy-to-sfdx.com/dist/assets/images/DeployToSFDX.svg)](https://deploy-to-sfdx.com/)
+1. Install Salesforce DX. Enable the Dev Hub in your org or sign up for a Dev Hub trial org and install the Salesforce DX CLI. Follow the instructions in the [Salesforce DX Setup Guide](https://developer.salesforce.com/docs/atlas.en-us.sfdx_setup.meta/sfdx_setup/sfdx_setup_intro.htm?search_text=trial%20hub%20org) or in the [App Development with Salesforce DX](https://trailhead.salesforce.com/modules/sfdx_app_dev) Trailhead module.
+
+1. Clone this repository:
+
+   ```bash
+   git clone https://github.com/forcedotcom/assessment-bot
+   cd assessment-bot
+   ```
+
+1. Run the `org-init.sh` shell script provided in this repo. This script will generate a scratch org pre-loaded with a couple of Assessment Definitions.
+
+   ```bash
+    ./org-init.sh
+   ```
 
 ### Post-installation steps
 
