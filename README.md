@@ -2,9 +2,9 @@
 
 # Conversational Assessments
 
-Assessments represent a conversation where a score, recommendation or feedback is provded to end users based on their responses. The goal of this project is to provide a framework for building such assessments through simplec configuration using Einstein Bots + Digital Engagement. Assessments built in this framework provide out of the box support for signal detection, reporting and transcript deletion.  
+Assessments represent a conversation where a score, recommendation or feedback is provided to end users based on their responses. The goal of this project is to provide a framework for building such assessments through simple configuration using Einstein Bots + Digital Engagement. Assessments built in this framework provide out of the box support for signal detection, reporting and transcript deletion. 
 
-Assessment definition trees can be configured through a Custom Object and a pre-configured Einstein Bot will be able to interpret and serve the assessment.
+Assessment definition trees can be configured through a Custom Object and a pre-configured Einstein Bot will be able to interpret and serve the assessment definition.
 
 ## Setup Instructions
 
@@ -18,7 +18,7 @@ A Salesforce org with Chat and Einstein Bots enabled. Steps on how to enable the
 #### Method 1 : Un-managed package deployment
 
 You can install this application by using one of the package installation links available in the "Releases" section of this repository. 
-Once you go to that link it will guide through the setup process. Select the "Install for Admins Only" option, once installed you should see the package listed under Installed Packages.
+Once you go to that link, it will guide you through the setup process. Select the "Install for Admins Only" option, once installed you should see the package listed under `Setup > Installed Packages`.
 
 ![Package Install Wizard2](/docs/images/package/install-2.png?raw=true)
 
