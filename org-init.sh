@@ -23,7 +23,7 @@ scratch_org_days=${DAYS:-$default_scratch_org_days}
 scratch_org_wait=${WAIT:-$default_scratch_org_wait}
 
 echo "Creating a new scratch org ..."
-sfdx force:org:create -f config/project-scratch-def.json -d $scratch_org_days -w $scratch_org_wait -a current-so -s --json
+sfdx force:org:create -f config/project-scratch-def.json -d $scratch_org_days -w $scratch_org_wait -a current-assess-so -s --json
 
 echo "Pushing source code..."
 sfdx force:source:push
@@ -42,7 +42,7 @@ sfdx force:data:tree:import --plan sfdx-out/covid19-Assessment_Definition__c-Ass
 sfdx force:data:tree:import --plan sfdx-out/speed_assess-Assessment_Definition__c-Assessment_Definition_Signal__c-Assessment_Definition_Item__c-Assessment_Definition_Decision_Signal__c-Assessment_Definition_Item_Choice__c-Assessment_Definition_Item_Event__c-plan.json
 
 echo "⚡ Setting password for admin user ..."
-sfdx force:user:password:generate -u current-so
+sfdx force:user:password:generate -u current-assess-so
 
 echo "⚡ Setting password for bot user ..."
-sfdx force:user:password:generate -u current-so -o bot-user
+sfdx force:user:password:generate -u current-assess-so -o bot-user

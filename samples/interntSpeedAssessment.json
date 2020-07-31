@@ -1,0 +1,254 @@
+{
+    "Assessment_Definition_Signals__r" : {
+      "records" : [ {
+        "Internal_Signal__c" : true,
+        "Name" : "Gaming",
+        "Id" : "a0521000002JfTqAAK",
+        "Assessment_Definition__c" : "a0621000004OfYlAAK"
+      }, {
+        "Internal_Signal__c" : false,
+        "Name" : "No Consent",
+        "Id" : "a0521000002JfTrAAK",
+        "Assessment_Definition__c" : "a0621000004OfYlAAK"
+      }, {
+        "Internal_Signal__c" : false,
+        "Name" : "1000 Mbps",
+        "Id" : "a0521000002JfTsAAK",
+        "Assessment_Definition__c" : "a0621000004OfYlAAK"
+      }, {
+        "Internal_Signal__c" : false,
+        "Name" : "600 Mbps",
+        "Id" : "a0521000002JfTtAAK",
+        "Assessment_Definition__c" : "a0621000004OfYlAAK"
+      }, {
+        "Internal_Signal__c" : false,
+        "Name" : "100 Mbps",
+        "Id" : "a0521000002JfTuAAK",
+        "Assessment_Definition__c" : "a0621000004OfYlAAK"
+      }, {
+        "Internal_Signal__c" : true,
+        "Name" : "Streaming",
+        "Id" : "a0521000002JfTvAAK",
+        "Assessment_Definition__c" : "a0621000004OfYlAAK"
+      }, {
+        "Internal_Signal__c" : true,
+        "Name" : "High Device Volume",
+        "Id" : "a0521000002JfTwAAK",
+        "Assessment_Definition__c" : "a0621000004OfYlAAK"
+      }, {
+        "Internal_Signal__c" : false,
+        "Name" : "300 Mbps",
+        "Id" : "a0521000002JfTxAAK",
+        "Assessment_Definition__c" : "a0621000004OfYlAAK"
+      } ]
+    },
+    "Assessment_Definition_Items__r" : {
+      "records" : [ {
+        "Type__c" : "Message",
+        "Next_Item_Name__c" : "Consent Question",
+        "Message__c" : "Hi, i'm in the internet speed assessor bot",
+        "Name" : "Initial Message",
+        "Id" : "a0421000003frwiAAA",
+        "Assessment_Definition__c" : "a0621000004OfYlAAK"
+      }, {
+        "Type__c" : "Question",
+        "Question_Type__c" : "TrueOrFalse",
+        "Next_Item_Name__c" : "Gaming and Streaming Decision",
+        "Message__c" : "Do you do online gaming?",
+        "Name" : "Gaming Question",
+        "Id" : "a0421000003frwjAAA",
+        "Assessment_Definition__c" : "a0621000004OfYlAAK"
+      }, {
+        "Type__c" : "Question",
+        "Question_Type__c" : "Choices",
+        "Next_Item_Name__c" : "Streaming Question",
+        "Message__c" : "How many devices connect to your network at a time?",
+        "Name" : "Device Number Question",
+        "Id" : "a0421000003frwkAAA",
+        "Assessment_Definition__c" : "a0621000004OfYlAAK"
+      }, {
+        "Type__c" : "Decision",
+        "Next_Item_Outcome_Condition__c" : "AND",
+        "Next_Item_Name__c" : "1000 Mbps Recommendation",
+        "Next_Item_Name_Other_Outcome__c" : "600 Mbps Recommendation",
+        "Name" : "Gaming High Device Volume Decision",
+        "Id" : "a0421000003frwlAAA",
+        "Assessment_Definition__c" : "a0621000004OfYlAAK"
+      }, {
+        "Type__c" : "Decision",
+        "Next_Item_Outcome_Condition__c" : "AND",
+        "Next_Item_Name__c" : "1000 Mbps Recommendation",
+        "Next_Item_Name_Other_Outcome__c" : "Gaming Decision",
+        "Name" : "Gaming and Streaming Decision",
+        "Id" : "a0421000003frwmAAA",
+        "Assessment_Definition__c" : "a0621000004OfYlAAK"
+      }, {
+        "Type__c" : "Question",
+        "Question_Type__c" : "TrueOrFalse",
+        "Next_Item_Name__c" : "Gaming Question",
+        "Message__c" : "Do you stream shows and movies?",
+        "Name" : "Streaming Question",
+        "Id" : "a0421000003frwnAAA",
+        "Assessment_Definition__c" : "a0621000004OfYlAAK"
+      }, {
+        "Type__c" : "Alert",
+        "Message__c" : "We recommend you use a 1000 Mbps Connection",
+        "Name" : "1000 Mbps Recommendation",
+        "Id" : "a0421000003frwoAAA",
+        "Assessment_Definition__c" : "a0621000004OfYlAAK"
+      }, {
+        "Type__c" : "Decision",
+        "Next_Item_Outcome_Condition__c" : "AND",
+        "Next_Item_Name__c" : "300 Mbps Recommendation",
+        "Next_Item_Name_Other_Outcome__c" : "100 Mbps Recommendation",
+        "Name" : "No Gaming High Device Volume Decision",
+        "Id" : "a0421000003frwpAAA",
+        "Assessment_Definition__c" : "a0621000004OfYlAAK"
+      }, {
+        "Type__c" : "Message",
+        "Message__c" : "Ok, thank you",
+        "Name" : "No Consent Message",
+        "Id" : "a0421000003frwqAAA",
+        "Assessment_Definition__c" : "a0621000004OfYlAAK"
+      }, {
+        "Type__c" : "Decision",
+        "Next_Item_Outcome_Condition__c" : "AND",
+        "Next_Item_Name__c" : "Gaming High Device Volume Decision",
+        "Next_Item_Name_Other_Outcome__c" : "No Gaming High Device Volume Decision",
+        "Name" : "Gaming Decision",
+        "Id" : "a0421000003frwrAAA",
+        "Assessment_Definition__c" : "a0621000004OfYlAAK"
+      }, {
+        "Type__c" : "Alert",
+        "Message__c" : "We recommend a 300 Mbps connection",
+        "Name" : "300 Mbps Recommendation",
+        "Id" : "a0421000003frwsAAA",
+        "Assessment_Definition__c" : "a0621000004OfYlAAK"
+      }, {
+        "Type__c" : "Alert",
+        "Message__c" : "We recommend a 100 Mbps connection",
+        "Name" : "100 Mbps Recommendation",
+        "Id" : "a0421000003frwtAAA",
+        "Assessment_Definition__c" : "a0621000004OfYlAAK"
+      }, {
+        "Type__c" : "Alert",
+        "Message__c" : "We recommend a 600 Mbps connection",
+        "Name" : "600 Mbps Recommendation",
+        "Id" : "a0421000003frwuAAA",
+        "Assessment_Definition__c" : "a0621000004OfYlAAK"
+      }, {
+        "Type__c" : "Question",
+        "Question_Type__c" : "TrueOrFalse",
+        "Next_Item_Outcome_Condition__c" : "true",
+        "Next_Item_Name__c" : "Device Number Question",
+        "Next_Item_Name_Other_Outcome__c" : "No Consent Message",
+        "Next_Item_Condition_Operator__c" : "Equal To",
+        "Message__c" : "Would you like to take the Assessment?",
+        "Name" : "Consent Question",
+        "Id" : "a0421000003frwvAAA",
+        "Assessment_Definition__c" : "a0621000004OfYlAAK"
+      } ]
+    },
+    "Assessment_Definition_Item_Choices__r" : {
+      "records" : [ {
+        "Value__c" : "12+",
+        "Order__c" : 2,
+        "Label__c" : "12+",
+        "Assessment_Definition_Signal__c" : "a0521000002JfTwAAK",
+        "Assessment_Definition_Item__c" : "a0421000003frwkAAA",
+        "Id" : "a0221000004WD4HAAW",
+        "Assessment_Definition__c" : "a0621000004OfYlAAK"
+      }, {
+        "Value__c" : "1-11",
+        "Order__c" : 1,
+        "Label__c" : "1-11",
+        "Assessment_Definition_Item__c" : "a0421000003frwkAAA",
+        "Id" : "a0221000004WD4IAAW",
+        "Assessment_Definition__c" : "a0621000004OfYlAAK"
+      } ]
+    },
+    "Assessment_Definition_Decision_Signals__r" : {
+      "records" : [ {
+        "Order__c" : 1,
+        "Assessment_Definition_Signal__c" : "a0521000002JfTqAAK",
+        "Assessment_Definition_Item__c" : "a0421000003frwmAAA",
+        "Id" : "a0021000008gyRQAAY",
+        "Assessment_Definition__c" : "a0621000004OfYlAAK"
+      }, {
+        "Order__c" : 2,
+        "Assessment_Definition_Signal__c" : "a0521000002JfTvAAK",
+        "Assessment_Definition_Item__c" : "a0421000003frwmAAA",
+        "Id" : "a0021000008gyRRAAY",
+        "Assessment_Definition__c" : "a0621000004OfYlAAK"
+      }, {
+        "Order__c" : 1,
+        "Assessment_Definition_Signal__c" : "a0521000002JfTqAAK",
+        "Assessment_Definition_Item__c" : "a0421000003frwrAAA",
+        "Id" : "a0021000008gyRSAAY",
+        "Assessment_Definition__c" : "a0621000004OfYlAAK"
+      }, {
+        "Order__c" : 1,
+        "Assessment_Definition_Signal__c" : "a0521000002JfTwAAK",
+        "Assessment_Definition_Item__c" : "a0421000003frwlAAA",
+        "Id" : "a0021000008gyRTAAY",
+        "Assessment_Definition__c" : "a0621000004OfYlAAK"
+      }, {
+        "Order__c" : 1,
+        "Assessment_Definition_Signal__c" : "a0521000002JfTwAAK",
+        "Assessment_Definition_Item__c" : "a0421000003frwpAAA",
+        "Id" : "a0021000008gyRUAAY",
+        "Assessment_Definition__c" : "a0621000004OfYlAAK"
+      } ]
+    },
+    "Assessment_Definition_Item_Events__r" : {
+      "records" : [ {
+        "Type__c" : "On True Condition",
+        "Assessment_Definition_Signal__c" : "a0521000002JfTvAAK",
+        "Assessment_Definition_Item__c" : "a0421000003frwnAAA",
+        "Id" : "a0321000004XrABAA0",
+        "Assessment_Definition__c" : "a0621000004OfYlAAK"
+      }, {
+        "Type__c" : "On True Condition",
+        "Assessment_Definition_Signal__c" : "a0521000002JfTqAAK",
+        "Assessment_Definition_Item__c" : "a0421000003frwjAAA",
+        "Id" : "a0321000004XrACAA0",
+        "Assessment_Definition__c" : "a0621000004OfYlAAK"
+      }, {
+        "Type__c" : "On Entry",
+        "Assessment_Definition_Signal__c" : "a0521000002JfTsAAK",
+        "Assessment_Definition_Item__c" : "a0421000003frwoAAA",
+        "Id" : "a0321000004XrADAA0",
+        "Assessment_Definition__c" : "a0621000004OfYlAAK"
+      }, {
+        "Type__c" : "On Entry",
+        "Assessment_Definition_Signal__c" : "a0521000002JfTuAAK",
+        "Assessment_Definition_Item__c" : "a0421000003frwtAAA",
+        "Id" : "a0321000004XrAEAA0",
+        "Assessment_Definition__c" : "a0621000004OfYlAAK"
+      }, {
+        "Type__c" : "On Entry",
+        "Assessment_Definition_Signal__c" : "a0521000002JfTxAAK",
+        "Assessment_Definition_Item__c" : "a0421000003frwsAAA",
+        "Id" : "a0321000004XrAFAA0",
+        "Assessment_Definition__c" : "a0621000004OfYlAAK"
+      }, {
+        "Type__c" : "On Entry",
+        "Assessment_Definition_Signal__c" : "a0521000002JfTtAAK",
+        "Assessment_Definition_Item__c" : "a0421000003frwuAAA",
+        "Id" : "a0321000004XrAGAA0",
+        "Assessment_Definition__c" : "a0621000004OfYlAAK"
+      }, {
+        "Type__c" : "On Entry",
+        "Assessment_Definition_Signal__c" : "a0521000002JfTrAAK",
+        "Assessment_Definition_Item__c" : "a0421000003frwqAAA",
+        "Id" : "a0321000004XrAHAA0",
+        "Assessment_Definition__c" : "a0621000004OfYlAAK"
+      } ]
+    },
+    "Initial_Item_Name__c" : "Initial Message",
+    "Delete_Transcript_on_Completion__c" : false,
+    "Assessment_Definition_Id__c" : "Internet Speed Assessment",
+    "Active__c" : true,
+    "Name" : "Internet Speed Assessment",
+    "Id" : "a0621000004OfYlAAK"
+  }
