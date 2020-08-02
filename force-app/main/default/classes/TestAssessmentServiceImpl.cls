@@ -638,4 +638,133 @@ private with sharing class TestAssessmentServiceImpl {
         System.assertEquals('test value', res.textResponse);
     }
 
+    @isTest
+    static void testGetNextItemResponseTransferAgent() {
+        Assessment_Definition__c def = TestAssessmentUtil.createTestAssessmentDefinition();
+        Assessment_Session__c sess = TestAssessmentUtil.createAssessmentSession(def.Id, 'In Progress');
+        System.assertNotEquals(null, sess);
+
+        Map<String, Assessment_Definition_Item__c> itemsMap = TestAssessmentUtil.getAssessmentDefinitionItemsByNames(
+            def.Id,
+            new Set<String>{'C19_Transfer_To_Agent'});
+
+        Assessment_Definition_Item__c currentItem = itemsMap.get('C19_Transfer_To_Agent');
+        System.assertNotEquals(null, currentItem);
+
+        Test.startTest();
+
+        AssessmentNextItemRequest req = new AssessmentNextItemRequest();
+        req.assessmentSessionId = sess.Id;
+        req.assessmentItemId = currentItem.Id;
+
+        AssessmentService service = new AssessmentServiceImpl();
+        AssessmentNextItemResponse nextItemResponse = service.getNextItemResponse(req);
+        Test.stopTest();
+
+        System.assertEquals('Transfer', nextItemResponse.type);
+        System.assertEquals('Agent', nextItemResponse.transferType);
+        System.assertEquals(null, nextItemResponse.transferBotId);
+        System.assertEquals(null, nextItemResponse.transferQueueId);
+        System.assertEquals(null, nextItemResponse.transferAssessmentId);
+        System.assertEquals(currentItem.Id, nextItemResponse.assessmentItemId);
+        System.assertEquals(0, nextItemResponse.choices.size());
+    }
+
+    @isTest
+    static void testGetNextItemResponseTransferQueue() {
+        Assessment_Definition__c def = TestAssessmentUtil.createTestAssessmentDefinition();
+        Assessment_Session__c sess = TestAssessmentUtil.createAssessmentSession(def.Id, 'In Progress');
+        System.assertNotEquals(null, sess);
+
+        Map<String, Assessment_Definition_Item__c> itemsMap = TestAssessmentUtil.getAssessmentDefinitionItemsByNames(
+            def.Id,
+            new Set<String>{'C19_Transfer_To_Queue'});
+
+        Assessment_Definition_Item__c currentItem = itemsMap.get('C19_Transfer_To_Queue');
+        System.assertNotEquals(null, currentItem);
+
+        Test.startTest();
+
+        AssessmentNextItemRequest req = new AssessmentNextItemRequest();
+        req.assessmentSessionId = sess.Id;
+        req.assessmentItemId = currentItem.Id;
+
+        AssessmentService service = new AssessmentServiceImpl();
+        AssessmentNextItemResponse nextItemResponse = service.getNextItemResponse(req);
+        Test.stopTest();
+
+        System.assertEquals('Transfer', nextItemResponse.type);
+        System.assertEquals('Queue', nextItemResponse.transferType);
+        System.assertEquals(null, nextItemResponse.transferBotId);
+        System.assertEquals(null, nextItemResponse.transferAssessmentId);
+        System.assertEquals(TestAssessmentUtil.getTestTransferTargetId('Queue'), nextItemResponse.transferQueueId);
+        System.assertEquals(currentItem.Id, nextItemResponse.assessmentItemId);
+        System.assertEquals(0, nextItemResponse.choices.size());
+    }
+
+    @isTest
+    static void testGetNextItemResponseTransferBot() {
+        Assessment_Definition__c def = TestAssessmentUtil.createTestAssessmentDefinition();
+        Assessment_Session__c sess = TestAssessmentUtil.createAssessmentSession(def.Id, 'In Progress');
+        System.assertNotEquals(null, sess);
+
+        Map<String, Assessment_Definition_Item__c> itemsMap = TestAssessmentUtil.getAssessmentDefinitionItemsByNames(
+            def.Id,
+            new Set<String>{'C19_Transfer_To_Bot'});
+
+        Assessment_Definition_Item__c currentItem = itemsMap.get('C19_Transfer_To_Bot');
+        System.assertNotEquals(null, currentItem);
+
+        Test.startTest();
+
+        AssessmentNextItemRequest req = new AssessmentNextItemRequest();
+        req.assessmentSessionId = sess.Id;
+        req.assessmentItemId = currentItem.Id;
+
+        AssessmentService service = new AssessmentServiceImpl();
+        AssessmentNextItemResponse nextItemResponse = service.getNextItemResponse(req);
+        Test.stopTest();
+
+        System.assertEquals('Transfer', nextItemResponse.type);
+        System.assertEquals('Bot', nextItemResponse.transferType);
+        System.assertEquals(TestAssessmentUtil.getTestTransferTargetId('Bot'), nextItemResponse.transferBotId);
+        System.assertEquals(null, nextItemResponse.transferQueueId);
+        System.assertEquals(null, nextItemResponse.transferAssessmentId);
+        System.assertEquals(currentItem.Id, nextItemResponse.assessmentItemId);
+        System.assertEquals(0, nextItemResponse.choices.size());
+    }
+
+    @isTest
+    static void testGetNextItemResponseTransferAssessment() {
+        Assessment_Definition__c def = TestAssessmentUtil.createTestAssessmentDefinition();
+        Assessment_Session__c sess = TestAssessmentUtil.createAssessmentSession(def.Id, 'In Progress');
+        System.assertNotEquals(null, sess);
+
+        Map<String, Assessment_Definition_Item__c> itemsMap = TestAssessmentUtil.getAssessmentDefinitionItemsByNames(
+            def.Id,
+            new Set<String>{'C19_Transfer_To_Assessment'});
+
+        Assessment_Definition_Item__c currentItem = itemsMap.get('C19_Transfer_To_Assessment');
+        System.assertNotEquals(null, currentItem);
+
+        Test.startTest();
+
+        AssessmentNextItemRequest req = new AssessmentNextItemRequest();
+        req.assessmentSessionId = sess.Id;
+        req.assessmentItemId = currentItem.Id;
+
+        AssessmentService service = new AssessmentServiceImpl();
+        AssessmentNextItemResponse nextItemResponse = service.getNextItemResponse(req);
+        Test.stopTest();
+
+        System.assertEquals('Transfer', nextItemResponse.type);
+        System.assertEquals('Assessment', nextItemResponse.transferType);
+        System.assertEquals(TestAssessmentUtil.getTestTransferTargetId('Assessment'), nextItemResponse.transferAssessmentId);
+        System.assertEquals(null, nextItemResponse.transferQueueId);
+        System.assertEquals(null, nextItemResponse.transferBotId);
+        System.assertEquals(currentItem.Id, nextItemResponse.assessmentItemId);
+        System.assertEquals(0, nextItemResponse.choices.size());
+    }
+    
+
 }

@@ -23,8 +23,8 @@
     <requireHttps>true</requireHttps>
     <requireInsecurePortalAccess>false</requireInsecurePortalAccess>
     <selfRegPage>CommunitiesSelfReg</selfRegPage>
-    <siteAdmin>test-vhgfqcaih1pk@example.com</siteAdmin>
-    <siteGuestRecordDefaultOwner>test-vhgfqcaih1pk@example.com</siteGuestRecordDefaultOwner>
+    <siteAdmin>test-ea6fq5akxros@example.com</siteAdmin>
+    <siteGuestRecordDefaultOwner>test-ea6fq5akxros@example.com</siteGuestRecordDefaultOwner>
     <siteType>ChatterNetwork</siteType>
-    <subdomain>platform-speed-2898-172a5ada1da</subdomain>
+    <subdomain>drive-page-6088-173ac78eb88</subdomain>
 </CustomSite>

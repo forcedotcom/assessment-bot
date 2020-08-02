@@ -54,19 +54,6 @@ jobs:
     - name: Install Dependencies
       run: npm install sfdx-cli
 
-    - name: Extract branch name
-      shell: bash
-      run: echo "##[set-output name=package;]$(echo ${{github.head_ref}})"
-      id: extract_branch
-      if: github.event_name == 'pull_request'
-
-    - name: Validate branch name
-      run: |
-        echo "${{ steps.extract_branch.outputs.package }}"
-        echo "##[set-output name=package;]$(cut -d/ -f2 <<< ${{ steps.extract_branch.outputs.package }})"
-        echo "${{ steps.validate_branch.outputs.package }}"
-      id: validate_branch
-
     - name: Authenticate DevHub
       shell: bash
       env:

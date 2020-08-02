@@ -1,8 +1,24 @@
 @isTest
 public with sharing class TestAssessmentUtil {
 
+    public static final String TEST_QUEUE_ID = '00G3D000003TivRUAS';
+    public static final String TEST_BOT_ID = '0Xx3D0000004CGnSAM';
+    public static final String TEST_ASSESSMENT_ID = 'Test_Assessment_Id';
+
     public static String getTimestamp() {
         return String.valueof(Datetime.now().getTime());
+    }
+
+    public static String getTestTransferTargetId(String transferType) {
+        String testId = null;
+        if (transferType == AssessmentConstants.TRANSFER_TYPE_BOT) {
+            testId = TEST_QUEUE_ID;
+        } else if (transferType == AssessmentConstants.TRANSFER_TYPE_QUEUE) {
+            testId = TEST_BOT_ID;
+        } else if (transferType == AssessmentConstants.TRANSFER_TYPE_ASSESSMENT) {
+            testId = TEST_ASSESSMENT_ID;
+        }
+        return testId;
     }
 
     public static List<Assessment_Definition__c> createAssessmentDefinitions(Integer totalDefinitions, String initialItemName) {
@@ -90,6 +106,16 @@ public with sharing class TestAssessmentUtil {
         item.Next_Item_Condition_Operator__c = nextItemConditionOperator;
         item.Next_Item_Outcome_Condition__c = nextItemConditionValue;
         item.Next_Item_Name_Other_Outcome__c = nextItemNameOther;
+        return item;
+    }
+
+    public static Assessment_Definition_Item__c fillTransferItem(String definitionId, String name, String transferType ,String transferTargetName) {
+        Assessment_Definition_Item__c item = new Assessment_Definition_Item__c();
+        item.Name = name;
+        item.Assessment_Definition__c = definitionId;
+        item.Type__c = AssessmentConstants.ITEM_TYPE_TRANSFER;
+        item.Transfer_Type__c = transferType;
+        item.Transfer_Target_Name__c = transferTargetName;
         return item;
     }
 
@@ -311,7 +337,11 @@ public with sharing class TestAssessmentUtil {
             'C19_Age_Question_LT_Op' => fillQuestionItem(def.Id, 'C19_Age_Question_LT_Op', AssessmentConstants.QUESTION_TYPE_NUMBER, 'age question', 'C19_Call_911', AssessmentConstants.OPERATOR_LESS_THAN, '60', 'C19_No_Action'),
             'C19_Date_Question' => fillQuestionItem(def.Id, 'C19_Date_Question', AssessmentConstants.QUESTION_TYPE_DATE, 'date question', 'C19_Call_911', AssessmentConstants.OPERATOR_EQUAL_TO, '2020-08-22', 'C19_No_Action'),
             'C19_Date_Question_GT_Op' => fillQuestionItem(def.Id, 'C19_Date_Question_GT_Op', AssessmentConstants.QUESTION_TYPE_DATE, 'date question', 'C19_Call_911', AssessmentConstants.OPERATOR_GREATER_THAN, '2020-08-22', 'C19_No_Action'),
-            'C19_Date_Question_LT_Op' => fillQuestionItem(def.Id, 'C19_Date_Question_LT_Op', AssessmentConstants.QUESTION_TYPE_DATE, 'date question', 'C19_Call_911', AssessmentConstants.OPERATOR_LESS_THAN, '2020-08-22', 'C19_No_Action')
+            'C19_Date_Question_LT_Op' => fillQuestionItem(def.Id, 'C19_Date_Question_LT_Op', AssessmentConstants.QUESTION_TYPE_DATE, 'date question', 'C19_Call_911', AssessmentConstants.OPERATOR_LESS_THAN, '2020-08-22', 'C19_No_Action'),
+            'C19_Transfer_To_Agent' => fillTransferItem(def.Id, 'C19_Transfer_To_Agent',AssessmentConstants.TRANSFER_TYPE_AGENT, null),
+            'C19_Transfer_To_Queue' => fillTransferItem(def.Id, 'C19_Transfer_To_Queue',AssessmentConstants.TRANSFER_TYPE_QUEUE, 'AssessTestQueue'+getTimestamp()),
+            'C19_Transfer_To_Bot' => fillTransferItem(def.Id, 'C19_Transfer_To_Bot',AssessmentConstants.TRANSFER_TYPE_BOT, 'AssessTestBot'+getTimestamp()),
+            'C19_Transfer_To_Assessment' => fillTransferItem(def.Id, 'C19_Transfer_To_Assessment',AssessmentConstants.TRANSFER_TYPE_ASSESSMENT, 'AssessmentDefinition'+getTimestamp())
         };
         insert itemsMap.values();
 

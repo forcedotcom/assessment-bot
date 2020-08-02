@@ -15,4 +15,16 @@ global with sharing class AssessmentNextItemResponse {
     @InvocableVariable
     global String assessmentItemId;
 
+    @InvocableVariable
+    global String transferType;
+
+    @InvocableVariable
+    global Id transferBotId;
+
+    @InvocableVariable
+    global Id transferQueueId;
+
+    @InvocableVariable
+    global String transferAssessmentId;
+
 }

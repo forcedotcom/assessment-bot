@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Required_Transfer_Target</fullName>
+    <active>true</active>
+    <errorConditionFormula>!ISBLANK(TEXT(Transfer_Type__c)) &amp;&amp; (ISBLANK( Transfer_Target_Name__c ) &amp;&amp; (TEXT(Transfer_Type__c) != &quot;Agent&quot;))</errorConditionFormula>
+    <errorDisplayField>Transfer_Target_Name__c</errorDisplayField>
+    <errorMessage>Bot, Queue and Assessment Transfer Target Type require a transfer target name</errorMessage>
+</ValidationRule>
