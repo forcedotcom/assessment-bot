@@ -137,8 +137,6 @@ Back to our scenario, we will first create the greeting message in our assessmen
 
 `Next Item Name (Default Outcome)` should contain the name of the next item to be displayed after this item. We will set it to be `Consent Question` and create an Item with this name after saving this record.
 
-The Conditional Next Item Information fields will be ignored for this item since there is no user response to be used for conditional logic so these can be left blank.
-
 ![UserGuide](/docs/images/userguide/message1.png?raw=true)
 
 ## Question Item
@@ -228,8 +226,6 @@ Let's configure this item by creating a `Decision` step with the following param
 
 `Type` will be configured to `Decision`
 
-`Message` will be ignored here since this item will just be for executing conditional logic
-
 `Next Item Name (Default Outcome)` will contain the name of the next item (`1000 Mbps Recommendation`) if the decision outcome evaluates to true
 
 `Next Item Condition Value` will define the Conditional Logic to be used when comparing signals for this decision. By default it will do an AND condition between all configured signals but this can also be configured to perform and OR condition.
@@ -250,6 +246,20 @@ Our possible next items at this point can be `Gaming Decision` or `1000 Mbps Rec
 We have a few items in our decision tree for which it would be useful to be able to fire a signal just by visiting that item. To do this, we can create an On-Entry Signal event. Let's create the `1000 Mbps Recommendation` alert item and configure this signal event.
 
 ![UserGuide](/docs/images/userguide/alert1-event.png?raw=true)
+
+
+## Transfer Item
+
+We will not use this type of item for this scenario, but you can use the `Transfer` item type if you need to transfer to a specific Agent, Queue, Bot or event another Assessment Definition then as part of your assessment.
+
+To create a transfer item, create a new Assessment Definition Item with the `Transfer` record type and configure the transfer type to be one of the following values:
+
+- Agent : Escalate this session to an agent, default routing in the button will be used
+- Bot : Transfer the session to the Bot name configured in the `Transfer Target Name` field. NOTE: Name in this field should be the Bot Developer Name.
+- Queue : Transfer the session to the Queue name configured in the `Transfer Target Name` field. NOTE: Name in this field should be the Queue Developer Name.
+- Assessment : Start a new assessment session using the Assessment Definition configured in the `Transfer Target Name` field. NOTE: Name in this field should be the Assessment Definition Id of the desired assessment.
+
+![UserGuide](/docs/images/userguide/transfer-item.png?raw=true)
 
 
 # Scenario Testing

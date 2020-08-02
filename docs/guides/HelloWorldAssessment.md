@@ -11,12 +11,11 @@
 ![Assessment](/docs/images/sample-assessment-def/assess-def-new.png?raw=true)
 
 - Go to Assessment Definition details and click the `Configuration` tab 
-- Click the `New` button under the `Assessment Definition Items` section and enter the following paramters:
+- Click the `New` button under the `Assessment Definition Items` section and enter the following parameters:
 
+    - Record Type : `Alert`
     - Assessment Definition Item Name : `Initial Message`
-    - Type : `Alert` 
     - Message : `Hello World`
-    - You can leave other fields blank or use the existing defaults
 
 ![Assessment](/docs/images/sample-assessment-def/assess-def-item.png?raw=true)
 
