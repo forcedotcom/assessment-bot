@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RecordType xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Decision</fullName>
+    <active>true</active>
+    <label>Decision</label>
+    <picklistValues>
+        <picklist>Next_Item_Condition_Operator__c</picklist>
+        <values>
+            <fullName>Equal To</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Greater Than</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Less Than</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Not Equal To</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Question_Type__c</picklist>
+        <values>
+            <fullName>Choices</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Date</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Number</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Text</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>TrueOrFalse</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Transfer_Type__c</picklist>
+        <values>
+            <fullName>Agent</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Assessment</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Bot</fullName>
+            <default>false</default>
+        </values>
+        <values>
+            <fullName>Queue</fullName>
+            <default>false</default>
+        </values>
+    </picklistValues>
+    <picklistValues>
+        <picklist>Type__c</picklist>
+        <values>
+            <fullName>Decision</fullName>
+            <default>true</default>
+        </values>
+    </picklistValues>
+</RecordType>

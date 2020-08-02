@@ -310,6 +310,26 @@
         <apexPage>AssessmentDefinitionPreview</apexPage>
         <enabled>true</enabled>
     </pageAccesses>
+    <recordTypeVisibilities>
+        <recordType>Assessment_Definition_Item__c.Alert</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <recordType>Assessment_Definition_Item__c.Decision</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <recordType>Assessment_Definition_Item__c.Message</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <recordType>Assessment_Definition_Item__c.Question</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <recordType>Assessment_Definition_Item__c.Transfer</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
     <tabSettings>
         <tab>Assessment_Definition__c</tab>
         <visibility>Visible</visibility>
