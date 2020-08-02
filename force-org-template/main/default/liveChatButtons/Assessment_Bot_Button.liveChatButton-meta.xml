@@ -11,6 +11,9 @@
     <optionsHasRerouteDeclinedRequest>false</optionsHasRerouteDeclinedRequest>
     <optionsIsAutoAccept>false</optionsIsAutoAccept>
     <optionsIsInviteAutoRemove>false</optionsIsInviteAutoRemove>
-    <routingType xsi:nil="true"/>
+    <routingType>Choice</routingType>
+    <skills>
+        <skill>Assessment_Bot_Skill</skill>
+    </skills>
     <type>Standard</type>
 </LiveChatButton>
