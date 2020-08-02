@@ -4,7 +4,6 @@
         <label>Assessment Bot</label>
         <name>Assessment_Bot</name>
     </botMlDomain>
-    <botUser>test-ea6fq5akxros@example.com</botUser>
     <contextVariables>
         <contextVariableMappings>
             <SObjectType>LiveChatTranscript</SObjectType>
