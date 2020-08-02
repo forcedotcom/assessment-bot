@@ -59,6 +59,18 @@ global with sharing class AssessmentServiceImpl implements AssessmentService {
         response.message = currentItem.Message__c;
         response.answerType = currentItem.Question_Type__c;
         response.assessmentItemId = currentItem.Id;
+        response.transferType = currentItem.Transfer_Type__c;
+
+        if (currentItem.Type__c == AssessmentConstants.ITEM_TYPE_TRANSFER) {
+            String targetId = wsops.getTransferTargetId(currentItem.Transfer_Type__c, currentItem.Transfer_Target_Name__c);
+            if (currentItem.Transfer_Type__c == AssessmentConstants.TRANSFER_TYPE_QUEUE) {
+                response.transferQueueId = targetId;
+            } else if (currentItem.Transfer_Type__c == AssessmentConstants.TRANSFER_TYPE_BOT) {
+                response.transferBotId = targetId;
+            } else if (currentItem.Transfer_Type__c == AssessmentConstants.TRANSFER_TYPE_ASSESSMENT) {
+                response.transferAssessmentId = targetId;
+            }
+        }
 
         if (currentItem.Type__c == AssessmentConstants.ITEM_TYPE_DECISION) {
 
@@ -428,6 +440,8 @@ global with sharing class AssessmentServiceImpl implements AssessmentService {
                                                                 Next_Item_Condition_Operator__c,
                                                                 Question_Type__c,
                                                                 Type__c,
+                                                                Transfer_Type__c,
+                                                                Transfer_Target_Name__c,
                                                                 (select Id, Label__c, Value__c, Assessment_Definition_Signal__c, Next_Item_Name__c
                                                                     from Assessment_Definition_Item_Choices__r order by Order__c asc),
                                                                 (select Id, Assessment_Definition_Signal__c, Order__c
@@ -500,6 +514,32 @@ global with sharing class AssessmentServiceImpl implements AssessmentService {
             
             if (deployments.isEmpty()) return null;
             return deployments.get(0).Assessment_Definition__r.Assessment_Definition_Id__c;
+        }
+
+        public String getTransferTargetId(String transferType, String transferTargetName) {
+            String soql = null;
+            String targetId = null;
+            if (transferType == AssessmentConstants.TRANSFER_TYPE_QUEUE) {
+                soql = 'select Id from Group where Type = \'Queue\' and DeveloperName = :transferTargetName';
+            } else if (transferType == AssessmentConstants.TRANSFER_TYPE_BOT) {
+                soql = 'select Id from BotDefinition where DeveloperName = :transferTargetName';
+            } else if (transferType == AssessmentConstants.TRANSFER_TYPE_ASSESSMENT) {
+                soql = 'select Assessment_Definition_Id__c from Assessment_Definition__c where Assessment_Definition_Id__c = :transferTargetName';
+            }
+            if (soql != null) {
+                List<SObject> records = Database.query(soql);
+                if (records != null && !records.isEmpty()) {
+                    if (transferType == AssessmentConstants.TRANSFER_TYPE_ASSESSMENT) {
+                        targetId = (String)records.get(0).get('Assessment_Definition_Id__c');
+                    } else {
+                        targetId = records.get(0).Id; 
+                    }
+                }
+                if (Test.isRunningTest()) {
+                    return TestAssessmentUtil.getTestTransferTargetId(transferType);
+                }
+            }
+            return targetId;
         }
 
     }

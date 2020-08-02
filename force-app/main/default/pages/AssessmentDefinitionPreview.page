@@ -16,7 +16,7 @@
             var initESW = function(gslbBaseURL) {
                 // Required if you want labels in a language that’s different from your user’s context.
                 //embedded_svc.menu.settings.language = ''; //For example, enter 'en' or 'en-US'
-                embedded_svc.menu.chat.settings.extraPrechatFormDetails = [{"label":"Assessment Definition","value":"{!Assessment_Definition__c.Assessment_Definition_Id__c}", "transcriptFields": ["Source_Assessment_Definition__c"]}];
+                //embedded_svc.menu.chat.settings.extraPrechatFormDetails = [{"label":"Assessment Definition","value":"{!Assessment_Definition__c.Assessment_Definition_Id__c}", "transcriptFields": ["Source_Assessment_Definition__c"]}];
                 // Chat server endpoint URLs.
                 embedded_svc.menu.init(
                     '{!JSENCODE(orgUrl)}',

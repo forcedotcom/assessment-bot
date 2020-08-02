@@ -30,6 +30,11 @@
                 <default>false</default>
                 <label>Decision</label>
             </value>
+            <value>
+                <fullName>Transfer</fullName>
+                <default>false</default>
+                <label>Transfer</label>
+            </value>
         </valueSetDefinition>
     </valueSet>
 </CustomField>
