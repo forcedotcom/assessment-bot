@@ -47,6 +47,7 @@ Once you go to that link, it will guide you through the setup process. Select th
 
 Once you've installed the Conversation Assessments package, you will need to configure the complete the following steps for the package to fully work.
 
+0. [Update Page Layout Assignment](docs/guides/LayoutAssignment.md)
 1. [Enable Omni-Channel](docs/guides/Omni.md)
 2. [Create a Chat Deployment and Chat Button](docs/guides/Chat.md)
 3. [Enable Communities and create a Community](docs/guides/Communities.md)

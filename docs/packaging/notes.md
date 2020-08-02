@@ -23,4 +23,4 @@ OR use the installation link `https://login.salesforce.com/packaging/installPack
 
 #### Release Package Version
 
-`sfdx force:package:version:promote -p "Conversational Assessments@1.0.5-1"`
+`sfdx force:package:version:promote -p "Conversational Assessments@1.0.6-1"`
