@@ -228,7 +228,7 @@ Let's configure this item by creating a `Decision` step with the following param
 
 `Next Item Name (Default Outcome)` will contain the name of the next item (`1000 Mbps Recommendation`) if the decision outcome evaluates to true
 
-`Next Item Condition Value` will define the Conditional Logic to be used when comparing signals for this decision. By default it will do an AND condition between all configured signals but this can also be configured to perform and OR condition.
+`Next Item Condition Value` will define the Conditional Logic to be used when comparing signals for this decision. By default it will do an AND condition between all configured signals but this can also be configured to perform an OR condition.
 
 `Next Item Name (Other Outcome)` will contain the name of the next item (`Gaming Decision`) if the decision outcome evaluates to false.
 
