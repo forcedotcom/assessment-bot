@@ -43,7 +43,7 @@ Once you go to that link, it will guide you through the setup process. Select th
     ./org-init.sh
    ```
 
-### Post-installation steps
+### Post-installation steps (One-time setup)
 
 Once you've installed the Conversation Assessments package, you will need to configure the complete the following steps for the package to fully work.
 
