@@ -64,13 +64,13 @@
             </layoutItems>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Next_Item_Outcome_Condition__c</field>
+                <field>Next_Item_Name_Other_Outcome__c</field>
             </layoutItems>
         </layoutColumns>
         <layoutColumns>
             <layoutItems>
                 <behavior>Edit</behavior>
-                <field>Next_Item_Name_Other_Outcome__c</field>
+                <field>Next_Item_Outcome_Condition__c</field>
             </layoutItems>
         </layoutColumns>
         <style>TwoColumnsLeftToRight</style>
