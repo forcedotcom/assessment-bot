@@ -4,7 +4,7 @@
 
 Assessments represent a conversation where a score, recommendation or feedback is provided to end users based on their responses. The goal of this project is to provide a framework for building such assessments through simple configuration using Einstein Bots + Digital Engagement. Assessments built in this framework provide out of the box support for signal detection, reporting and transcript deletion. 
 
-Assessment definition trees can be configured through a Custom Object and a pre-configured Einstein Bot will be able to interpret and serve the assessment definition.
+Assessment definition decision trees can be configured through Custom Objects included in this package and a pre-configured Einstein Bot will be able to interpret and serve the assessment definition.
 
 ## Setup Instructions
 
