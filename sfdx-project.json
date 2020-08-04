@@ -6,7 +6,7 @@
             "package": "Conversational Assessments",
             "versionName": "Summer 20",
             "versionDescription": "Conversational Assessments",
-            "versionNumber": "1.0.8.NEXT",
+            "versionNumber": "1.0.9.NEXT",
             "definitionFile": "config/project-scratch-def.json"
         },
         {
@@ -29,6 +29,7 @@
         "Conversational Assessments@1.0.5-2": "04t4R0000019RHBQA2",
         "Conversational Assessments@1.0.6-1": "04t4R0000019RHGQA2",
         "Conversational Assessments@1.0.7-1": "04t4R0000019RHLQA2",
-        "Conversational Assessments@1.0.8-1": "04t4R0000019RHQQA2"
+        "Conversational Assessments@1.0.8-1": "04t4R0000019RHQQA2",
+        "Conversational Assessments@1.0.9-1": "04t4R0000019RHVQA2"
     }
 }

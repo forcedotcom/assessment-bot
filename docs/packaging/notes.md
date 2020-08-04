@@ -17,10 +17,10 @@
 
 Create a subcriber org and then install the package using one of the following : 
 
-`sfdx force:package:install --package "Conversational Assessments@1.0.1-1" --targetusername assessmentdev-subscriber --wait 15 --publishwait 15`
+`sfdx force:package:install --package "Conversational Assessments@1.0.9-1" --targetusername assessmentdev-subscriber --wait 15 --publishwait 15`
 
 OR use the installation link `https://login.salesforce.com/packaging/installPackage.apexp?p0=PACKAGE_VERSION_ID`
 
 #### Release Package Version
 
-`sfdx force:package:version:promote -p "Conversational Assessments@1.0.8-1"`
+`sfdx force:package:version:promote -p "Conversational Assessments@1.0.9-1"`
