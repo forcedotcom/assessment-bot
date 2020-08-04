@@ -3,78 +3,22 @@
     "records" : [ {
       "Internal_Signal__c" : false,
       "Name" : "Non-Symptomatic",
-      "Id" : "a053t000010X2ItAAK",
-      "Assessment_Definition__c" : "a063t00000bVviUAAS"
+      "Id" : "a053D000002qlKUQAY",
+      "Assessment_Definition__c" : "a063D000003gpp8QAA"
     }, {
       "Internal_Signal__c" : false,
       "Name" : "Symptomatic",
-      "Id" : "a053t000010X2IuAAK",
-      "Assessment_Definition__c" : "a063t00000bVviUAAS"
+      "Id" : "a053D000002qlKVQAY",
+      "Assessment_Definition__c" : "a063D000003gpp8QAA"
     }, {
       "Internal_Signal__c" : false,
       "Name" : "No Consent",
-      "Id" : "a053t000010X2IvAAK",
-      "Assessment_Definition__c" : "a063t00000bVviUAAS"
+      "Id" : "a053D000002qlKWQAY",
+      "Assessment_Definition__c" : "a063D000003gpp8QAA"
     } ]
   },
   "Assessment_Definition_Items__r" : {
     "records" : [ {
-      "RecordTypeId" : "0123t000000F7pvAAC",
-      "Type__c" : "Question",
-      "Question_Type__c" : "TrueOrFalse",
-      "Next_Item_Outcome_Condition__c" : "true",
-      "Next_Item_Name__c" : "C19_Symptom_Screen5",
-      "Next_Item_Name_Other_Outcome__c" : "C19_Symptom_Screen6",
-      "Next_Item_Condition_Operator__c" : "Equal To",
-      "Message__c" : "Do you have any of these additional symptoms?\r\n- Muscle or body aches\r\n- Persistent cough\r\n- Sore throat",
-      "Name" : "C19_Symptom_Screen4",
-      "Id" : "a043t00000urasmAAA",
-      "Assessment_Definition__c" : "a063t00000bVviUAAS"
-    }, {
-      "RecordTypeId" : "0123t000000F7pvAAC",
-      "Type__c" : "Question",
-      "Question_Type__c" : "TrueOrFalse",
-      "Next_Item_Outcome_Condition__c" : "false",
-      "Next_Item_Name__c" : "C19_Symptom_Screen3",
-      "Next_Item_Name_Other_Outcome__c" : "C19_Call_911",
-      "Next_Item_Condition_Operator__c" : "Equal To",
-      "Message__c" : "Do you have any of these symptoms?\r\n- Severe, constant dizziness or lightheadedness\r\n- Sudden confusion (new or worsening)\r\n- Episodes of fainting or having trouble waking up",
-      "Name" : "C19_Symptom_Screen2",
-      "Id" : "a043t00000urasnAAA",
-      "Assessment_Definition__c" : "a063t00000bVviUAAS"
-    }, {
-      "RecordTypeId" : "0123t000000F7puAAC",
-      "Type__c" : "Message",
-      "Next_Item_Name__c" : "C19_Symptom_Screen7_2",
-      "Message__c" : "In the last 14 days, have you done any of the following?",
-      "Name" : "C19_Symptom_Screen7",
-      "Id" : "a043t00000urasoAAA",
-      "Assessment_Definition__c" : "a063t00000bVviUAAS"
-    }, {
-      "RecordTypeId" : "0123t000000F7puAAC",
-      "Type__c" : "Message",
-      "Next_Item_Name__c" : "C19_Symptomatic_2",
-      "Message__c" : "Alert: You may be infected or have a risk for infection. Because you may be infected, please isolate yourself from others. Don’t go to public places, stay at home, and don’t have any visitors. Book an appointment immediately.",
-      "Name" : "C19_Symptomatic",
-      "Id" : "a043t00000uraspAAA",
-      "Assessment_Definition__c" : "a063t00000bVviUAAS"
-    }, {
-      "RecordTypeId" : "0123t000000F7puAAC",
-      "Type__c" : "Message",
-      "Next_Item_Name__c" : "C19_Greeting_2",
-      "Message__c" : "Hi, I am the Covid19 Assessment Bot.",
-      "Name" : "C19_Greeting",
-      "Id" : "a043t00000urasqAAA",
-      "Assessment_Definition__c" : "a063t00000bVviUAAS"
-    }, {
-      "RecordTypeId" : "0123t000000F7psAAC",
-      "Type__c" : "Alert",
-      "Message__c" : "If your symptoms change or worsen, take this assessment again.",
-      "Name" : "C19_No_Action_2",
-      "Id" : "a043t00000urasrAAA",
-      "Assessment_Definition__c" : "a063t00000bVviUAAS"
-    }, {
-      "RecordTypeId" : "0123t000000F7pvAAC",
       "Type__c" : "Question",
       "Question_Type__c" : "TrueOrFalse",
       "Next_Item_Outcome_Condition__c" : "true",
@@ -83,25 +27,22 @@
       "Next_Item_Condition_Operator__c" : "Equal To",
       "Message__c" : "I’m not a substitute for professional medical advice, diagnosis, or treatment. Always consult a medical professional for serious symptoms or emergencies.The COVID-19 self-assessment can guide you in seeking appropriate medical care. Do you agree?",
       "Name" : "C19_Consent",
-      "Id" : "a043t00000urastAAA",
-      "Assessment_Definition__c" : "a063t00000bVviUAAS"
+      "Id" : "a043D000004wA85QAE",
+      "Assessment_Definition__c" : "a063D000003gpp8QAA"
     }, {
-      "RecordTypeId" : "0123t000000F7puAAC",
       "Type__c" : "Message",
       "Message__c" : "Ok, since you don't consent to this assessment the session will now be ended. Thank you!",
       "Name" : "C19_No_Consent",
-      "Id" : "a043t00000urasuAAA",
-      "Assessment_Definition__c" : "a063t00000bVviUAAS"
+      "Id" : "a043D000004wA86QAE",
+      "Assessment_Definition__c" : "a063D000003gpp8QAA"
     }, {
-      "RecordTypeId" : "0123t000000F7puAAC",
       "Type__c" : "Message",
       "Next_Item_Name__c" : "C19_Greeting",
       "Message__c" : "If you're experiencing a medical emergency, call 911 or your local emergency number.",
       "Name" : "C19_Initial_Message",
-      "Id" : "a043t00000urasvAAA",
-      "Assessment_Definition__c" : "a063t00000bVviUAAS"
+      "Id" : "a043D000004wA87QAE",
+      "Assessment_Definition__c" : "a063D000003gpp8QAA"
     }, {
-      "RecordTypeId" : "0123t000000F7pvAAC",
       "Type__c" : "Question",
       "Question_Type__c" : "TrueOrFalse",
       "Next_Item_Outcome_Condition__c" : "true",
@@ -110,18 +51,16 @@
       "Next_Item_Condition_Operator__c" : "Equal To",
       "Message__c" : "In the last 14 days, have you had contact with the following individuals?\r\n- Someone diagnosed with COVID-19\r\n- Someone who works in a public setting like a healthcare facility or a grocery store",
       "Name" : "C19_Symptom_Screen6",
-      "Id" : "a043t00000uraswAAA",
-      "Assessment_Definition__c" : "a063t00000bVviUAAS"
+      "Id" : "a043D000004wA88QAE",
+      "Assessment_Definition__c" : "a063D000003gpp8QAA"
     }, {
-      "RecordTypeId" : "0123t000000F7puAAC",
       "Type__c" : "Message",
       "Next_Item_Name__c" : "C19_Consent",
       "Message__c" : "The COVID-19 self-assessment can guide you in seeking appropriate medical care. This risk assessment isn’t meant to take the place of consultation with your healthcare provider or to diagnose or treat conditions, including COVID-19.",
       "Name" : "C19_Greeting_2",
-      "Id" : "a043t00000urasxAAA",
-      "Assessment_Definition__c" : "a063t00000bVviUAAS"
+      "Id" : "a043D000004wA89QAE",
+      "Assessment_Definition__c" : "a063D000003gpp8QAA"
     }, {
-      "RecordTypeId" : "0123t000000F7pvAAC",
       "Type__c" : "Question",
       "Question_Type__c" : "TrueOrFalse",
       "Next_Item_Outcome_Condition__c" : "false",
@@ -130,17 +69,15 @@
       "Next_Item_Condition_Operator__c" : "Equal To",
       "Message__c" : "Do you have any of these additional symptoms?\r\n- A fever or temperature greater than 100.4 F\r\n- Moderate to severe breathing problems\r\n- Abnormally tired or fatigued",
       "Name" : "C19_Symptom_Screen3",
-      "Id" : "a043t00000urasyAAA",
-      "Assessment_Definition__c" : "a063t00000bVviUAAS"
+      "Id" : "a043D000004wA8AQAU",
+      "Assessment_Definition__c" : "a063D000003gpp8QAA"
     }, {
-      "RecordTypeId" : "0123t000000F7psAAC",
       "Type__c" : "Alert",
       "Message__c" : "Emergency: Call 911. You may be having a medical emergency. Call 911 now. You need immediate medical attention.\r\nTell the 911 operator if you’ve been in contact with someone with COVID-19 or if you’ve been to a place where COVID-19 is spreading.",
       "Name" : "C19_Call_911",
-      "Id" : "a043t00000uraszAAA",
-      "Assessment_Definition__c" : "a063t00000bVviUAAS"
+      "Id" : "a043D000004wA8BQAU",
+      "Assessment_Definition__c" : "a063D000003gpp8QAA"
     }, {
-      "RecordTypeId" : "0123t000000F7pvAAC",
       "Type__c" : "Question",
       "Question_Type__c" : "TrueOrFalse",
       "Next_Item_Outcome_Condition__c" : "true",
@@ -149,17 +86,15 @@
       "Next_Item_Condition_Operator__c" : "Equal To",
       "Message__c" : "Are you 65 or over?",
       "Name" : "C19_Symptom_Screen5",
-      "Id" : "a043t00000urat0AAA",
-      "Assessment_Definition__c" : "a063t00000bVviUAAS"
+      "Id" : "a043D000004wA8CQAU",
+      "Assessment_Definition__c" : "a063D000003gpp8QAA"
     }, {
-      "RecordTypeId" : "0123t000000F7psAAC",
       "Type__c" : "Alert",
       "Message__c" : "To book an appointment with our COVID-19 care team, <a href='/health/s/appointment'>click here</a>",
       "Name" : "C19_Symptomatic_2",
-      "Id" : "a043t00000urat1AAA",
-      "Assessment_Definition__c" : "a063t00000bVviUAAS"
+      "Id" : "a043D000004wA8DQAU",
+      "Assessment_Definition__c" : "a063D000003gpp8QAA"
     }, {
-      "RecordTypeId" : "0123t000000F7pvAAC",
       "Type__c" : "Question",
       "Question_Type__c" : "TrueOrFalse",
       "Next_Item_Outcome_Condition__c" : "true",
@@ -168,18 +103,16 @@
       "Next_Item_Condition_Operator__c" : "Equal To",
       "Message__c" : "- Lived in or visited a place where COVID-19 is spreading\r\n- Traveled domestically, internationally, or been on a cruise ship\r\n- Visited a public place with many people like a healthcare facility or a grocery store",
       "Name" : "C19_Symptom_Screen7_2",
-      "Id" : "a043t00000urat2AAA",
-      "Assessment_Definition__c" : "a063t00000bVviUAAS"
+      "Id" : "a043D000004wA8EQAU",
+      "Assessment_Definition__c" : "a063D000003gpp8QAA"
     }, {
-      "RecordTypeId" : "0123t000000F7puAAC",
       "Type__c" : "Message",
       "Next_Item_Name__c" : "C19_No_Action_2",
       "Message__c" : "You don’t require COVID-19 testing.\r\nBased on your responses, there’s no evidence that you have symptoms of COVID-19. Stay healthy by practicing social distancing to reduce community transmission and follow guidance from your local officials.",
       "Name" : "C19_No_Action",
-      "Id" : "a043t00000urat3AAA",
-      "Assessment_Definition__c" : "a063t00000bVviUAAS"
+      "Id" : "a043D000004wA8FQAU",
+      "Assessment_Definition__c" : "a063D000003gpp8QAA"
     }, {
-      "RecordTypeId" : "0123t000000F7pvAAC",
       "Type__c" : "Question",
       "Question_Type__c" : "TrueOrFalse",
       "Next_Item_Outcome_Condition__c" : "false",
@@ -188,35 +121,84 @@
       "Next_Item_Condition_Operator__c" : "Equal To",
       "Message__c" : "Do you have any of these symptoms?\r\n- Extreme difficulty breathing\r\n- Severe chest pain or pressure in your chest\r\n- Face or lips turning blue",
       "Name" : "C19_Symptom_Screen1",
-      "Id" : "a043t00000urat4AAA",
-      "Assessment_Definition__c" : "a063t00000bVviUAAS"
+      "Id" : "a043D000004wA8GQAU",
+      "Assessment_Definition__c" : "a063D000003gpp8QAA"
+    }, {
+      "Type__c" : "Question",
+      "Question_Type__c" : "TrueOrFalse",
+      "Next_Item_Outcome_Condition__c" : "true",
+      "Next_Item_Name__c" : "C19_Symptom_Screen5",
+      "Next_Item_Name_Other_Outcome__c" : "C19_Symptom_Screen6",
+      "Next_Item_Condition_Operator__c" : "Equal To",
+      "Message__c" : "Do you have any of these additional symptoms?\r\n- Muscle or body aches\r\n- Persistent cough\r\n- Sore throat",
+      "Name" : "C19_Symptom_Screen4",
+      "Id" : "a043D000004wA8HQAU",
+      "Assessment_Definition__c" : "a063D000003gpp8QAA"
+    }, {
+      "Type__c" : "Question",
+      "Question_Type__c" : "TrueOrFalse",
+      "Next_Item_Outcome_Condition__c" : "false",
+      "Next_Item_Name__c" : "C19_Symptom_Screen3",
+      "Next_Item_Name_Other_Outcome__c" : "C19_Call_911",
+      "Next_Item_Condition_Operator__c" : "Equal To",
+      "Message__c" : "Do you have any of these symptoms?\r\n- Severe, constant dizziness or lightheadedness\r\n- Sudden confusion (new or worsening)\r\n- Episodes of fainting or having trouble waking up",
+      "Name" : "C19_Symptom_Screen2",
+      "Id" : "a043D000004wA8IQAU",
+      "Assessment_Definition__c" : "a063D000003gpp8QAA"
+    }, {
+      "Type__c" : "Message",
+      "Next_Item_Name__c" : "C19_Symptom_Screen7_2",
+      "Message__c" : "In the last 14 days, have you done any of the following?",
+      "Name" : "C19_Symptom_Screen7",
+      "Id" : "a043D000004wA8JQAU",
+      "Assessment_Definition__c" : "a063D000003gpp8QAA"
+    }, {
+      "Type__c" : "Message",
+      "Next_Item_Name__c" : "C19_Symptomatic_2",
+      "Message__c" : "Alert: You may be infected or have a risk for infection. Because you may be infected, please isolate yourself from others. Don’t go to public places, stay at home, and don’t have any visitors. Book an appointment immediately.",
+      "Name" : "C19_Symptomatic",
+      "Id" : "a043D000004wA8KQAU",
+      "Assessment_Definition__c" : "a063D000003gpp8QAA"
+    }, {
+      "Type__c" : "Message",
+      "Next_Item_Name__c" : "C19_Greeting_2",
+      "Message__c" : "Hi, I am Sara.",
+      "Name" : "C19_Greeting",
+      "Id" : "a043D000004wA8LQAU",
+      "Assessment_Definition__c" : "a063D000003gpp8QAA"
+    }, {
+      "Type__c" : "Alert",
+      "Message__c" : "If your symptoms change or worsen, take this assessment again.",
+      "Name" : "C19_No_Action_2",
+      "Id" : "a043D000004wA8MQAU",
+      "Assessment_Definition__c" : "a063D000003gpp8QAA"
+    }, {
+      "Transfer_Type__c" : "Agent",
+      "Type__c" : "Transfer",
+      "Name" : "C19_Test_Transfer",
+      "Id" : "a043D000004wBKJQA2",
+      "Assessment_Definition__c" : "a063D000003gpp8QAA"
     } ]
   },
   "Assessment_Definition_Item_Events__r" : {
     "records" : [ {
       "Type__c" : "On Entry",
-      "Assessment_Definition_Signal__c" : "a053t000010X2ItAAK",
-      "Assessment_Definition_Item__c" : "a043t00000urat3AAA",
-      "Id" : "a033t00000TJ1owAAD",
-      "Assessment_Definition__c" : "a063t00000bVviUAAS"
+      "Assessment_Definition_Signal__c" : "a053D000002qlKUQAY",
+      "Assessment_Definition_Item__c" : "a043D000004wA8FQAU",
+      "Id" : "a033D000006t3oSQAQ",
+      "Assessment_Definition__c" : "a063D000003gpp8QAA"
     }, {
       "Type__c" : "On Entry",
-      "Assessment_Definition_Signal__c" : "a053t000010X2IvAAK",
-      "Assessment_Definition_Item__c" : "a043t00000urasuAAA",
-      "Id" : "a033t00000TJ1oxAAD",
-      "Assessment_Definition__c" : "a063t00000bVviUAAS"
+      "Assessment_Definition_Signal__c" : "a053D000002qlKWQAY",
+      "Assessment_Definition_Item__c" : "a043D000004wA86QAE",
+      "Id" : "a033D000006t3oTQAQ",
+      "Assessment_Definition__c" : "a063D000003gpp8QAA"
     }, {
       "Type__c" : "On Entry",
-      "Assessment_Definition_Signal__c" : "a053t000010X2IuAAK",
-      "Assessment_Definition_Item__c" : "a043t00000uraspAAA",
-      "Id" : "a033t00000TJ1oyAAD",
-      "Assessment_Definition__c" : "a063t00000bVviUAAS"
-    }, {
-      "Type__c" : "On Entry",
-      "Assessment_Definition_Signal__c" : "a053t000010X2IuAAK",
-      "Assessment_Definition_Item__c" : "a043t00000uraszAAA",
-      "Id" : "a033t00000TJJtmAAH",
-      "Assessment_Definition__c" : "a063t00000bVviUAAS"
+      "Assessment_Definition_Signal__c" : "a053D000002qlKVQAY",
+      "Assessment_Definition_Item__c" : "a043D000004wA8KQAU",
+      "Id" : "a033D000006t3oUQAQ",
+      "Assessment_Definition__c" : "a063D000003gpp8QAA"
     } ]
   },
   "Initial_Item_Name__c" : "C19_Initial_Message",
@@ -224,5 +206,5 @@
   "Assessment_Definition_Id__c" : "Covid19_Symptoms",
   "Active__c" : true,
   "Name" : "Covid19 Symptoms",
-  "Id" : "a063t00000bVviUAAS"
+  "Id" : "a063D000003gpp8QAA"
 }

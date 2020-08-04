@@ -8,7 +8,8 @@ public with sharing class AssessmentDefinitionImportExportService {
     private static final Set<String> OBJECT_KEYS_FILTER = new Set<String> {
         'attributes',
         'done',
-        'totalSize'};
+        'totalSize',
+        'RecordTypeId'};
 
     private static final Schema.SObjectType TOP_SOBJECT_TYPE = Assessment_Definition__c.SObjectType;
     private static final Schema.SObjectField TOP_SOBJECT_EXPORT_FILTER_FIELD = Assessment_Definition__c.Assessment_Definition_Id__c;
