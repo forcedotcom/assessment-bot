@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Queue xmlns="http://soap.sforce.com/2006/04/metadata">
     <doesSendEmailToMembers>false</doesSendEmailToMembers>
-    <name>Assessment Bot Queue</name>
-    <queueRoutingConfig>Assessment_Bot_Routing_Config</queueRoutingConfig>
+    <name>Assessment Queue</name>
+    <queueRoutingConfig>Assessment_Routing_Config</queueRoutingConfig>
     <queueSobject>
         <sobjectType>LiveChatTranscript</sobjectType>
     </queueSobject>

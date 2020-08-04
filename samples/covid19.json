@@ -172,12 +172,6 @@
       "Name" : "C19_No_Action_2",
       "Id" : "a043D000004wA8MQAU",
       "Assessment_Definition__c" : "a063D000003gpp8QAA"
-    }, {
-      "Transfer_Type__c" : "Agent",
-      "Type__c" : "Transfer",
-      "Name" : "C19_Test_Transfer",
-      "Id" : "a043D000004wBKJQA2",
-      "Assessment_Definition__c" : "a063D000003gpp8QAA"
     } ]
   },
   "Assessment_Definition_Item_Events__r" : {

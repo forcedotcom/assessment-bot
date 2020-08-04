@@ -2,7 +2,7 @@
 <QueueRoutingConfig xmlns="http://soap.sforce.com/2006/04/metadata">
     <capacityWeight>1.0</capacityWeight>
     <isAttributeBased>false</isAttributeBased>
-    <label>Assessment Bot Routing Config</label>
+    <label>Assessment Routing Config</label>
     <routingModel>LEAST_ACTIVE</routingModel>
     <routingPriority>1</routingPriority>
 </QueueRoutingConfig>

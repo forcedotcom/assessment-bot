@@ -184,11 +184,6 @@
         <readable>true</readable>
     </fieldPermissions>
     <fieldPermissions>
-        <editable>false</editable>
-        <field>Assessment_Definition__c.Initial_Item_Name__c</field>
-        <readable>true</readable>
-    </fieldPermissions>
-    <fieldPermissions>
         <editable>true</editable>
         <field>Assessment_Session_Signal__c.Assessment_Definition_Signal__c</field>
         <readable>true</readable>
