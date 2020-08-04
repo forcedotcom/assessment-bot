@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <EmbeddedServiceLiveAgent xmlns="http://soap.sforce.com/2006/04/metadata">
-    <embeddedServiceConfig>Assessment_Bot_Snap_In</embeddedServiceConfig>
+    <embeddedServiceConfig>Assessment_Bot</embeddedServiceConfig>
     <embeddedServiceQuickActions>
         <embeddedServiceLiveAgent>EmbeddedServiceLiveAgent_Parent04I2F00000000HbUAI_1725f113ba5</embeddedServiceLiveAgent>
         <order>1</order>
@@ -17,8 +17,8 @@
     <fontSize>Medium</fontSize>
     <isOfflineCaseEnabled>false</isOfflineCaseEnabled>
     <isQueuePositionEnabled>false</isQueuePositionEnabled>
-    <liveChatButton>Assessment_Bot_Button</liveChatButton>
-    <liveChatDeployment>Assessment_Bot_Deployment</liveChatDeployment>
+    <liveChatButton>Assessment_Button</liveChatButton>
+    <liveChatDeployment>Assessment_Deployment</liveChatDeployment>
     <masterLabel>EmbeddedServiceLiveAgent_Parent04I2F00000000HbUAI_1725f113ba5</masterLabel>
     <prechatEnabled>false</prechatEnabled>
     <scenario>Service</scenario>

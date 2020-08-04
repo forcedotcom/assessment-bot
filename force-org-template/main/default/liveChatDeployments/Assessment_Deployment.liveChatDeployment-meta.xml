@@ -5,6 +5,6 @@
     <displayQueuePosition>false</displayQueuePosition>
     <enablePrechatApi>false</enablePrechatApi>
     <enableTranscriptSave>false</enableTranscriptSave>
-    <label>Assessment Bot Deployment</label>
+    <label>Assessment Deployment</label>
     <windowTitle>Assessment Bot</windowTitle>
 </LiveChatDeployment>

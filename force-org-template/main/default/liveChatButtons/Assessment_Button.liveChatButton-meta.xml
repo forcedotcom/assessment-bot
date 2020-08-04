@@ -3,7 +3,7 @@
     <deployments/>
     <enableQueue>false</enableQueue>
     <isActive>true</isActive>
-    <label>Assessment Bot Button</label>
+    <label>Assessment Button</label>
     <optionsCustomRoutingIsEnabled>false</optionsCustomRoutingIsEnabled>
     <optionsHasChasitorIdleTimeout>false</optionsHasChasitorIdleTimeout>
     <optionsHasInviteAfterAccept>false</optionsHasInviteAfterAccept>
