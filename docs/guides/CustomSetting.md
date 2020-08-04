@@ -14,8 +14,16 @@ In order for the preview functionality to work correctly, org values for the Ass
 
 - Update the custom setting with the following parameters and click the `Save` button
 
-    - ESW Channel Name : `The developer name of your Channel Menu`
-    - Live Agent URL : `Your live agent url`  (you can get this from the embedded [channel menu code](/docs/guides/EmbeddedChatMenu.md#get-the-embedded-menu-deployment-code))
+    - Chat Deployment Name : `The developer name of your Chat Deployment`
+    - Chat Button Name: `The developer name of your Chat Button`
+    - ESW Deployment Dev Name : `The developer name of your Embedded Service Deployment`
+
+- The following parameters can be obtained from the from the Embedded Service Deployment [code](/docs/guides/EmbeddedService.md#get-the-embedded-deployment-code)) :
+
+    - Community URL : `Embedded Service deployment community url`
+    - Live Agent URL : `Embedded Service deployment live agent url`
+    - Live Agent Content URL : `Embedded Service deployment live agent content url`
+    - ESW Live Agent Dev Name : `Embedded Service deployment ESW Live Agent Dev Name`
 
 ![CustomSetting](/docs/images/custom-settings/custom-settings-values.png?raw=true)
 

@@ -58,14 +58,13 @@ Once you've installed the Conversation Assessments package, you will need to con
 2. [Create a Chat Deployment and Chat Button](docs/guides/Chat.md)
 3. [Enable Communities and create a Community](docs/guides/Communities.md)
 4. [Create an Embedded Service Deployment](docs/guides/EmbeddedService.md)
-5. [Create en Embedded Channel Menu](docs/guides/EmbeddedChatMenu.md)
-6. [Update Assessment Manager custom setting](docs/guides/CustomSetting.md)
-7. [Add a new CORS entry in your org](docs/guides/CORS.md)
-8. [Update the Assessment Bot configuration](docs/guides/BotConfig.md)
-9. [Assign the Assessment Admin permission set to your user](docs/guides/AdminPermSet.md)
-10. [Open the Assessment Manager app](docs/guides/AssessmentManagerApp.md)
-11. [Create and test your first Assessment](docs/guides/HelloWorldAssessment.md)
-12. [Schedule Assessment Session apex jobs](docs/guides/AssessmentScheduledJob.md)
+5. [Update Assessment Manager custom setting](docs/guides/CustomSetting.md)
+6. [Add a new CORS entry in your org](docs/guides/CORS.md)
+7. [Update the Assessment Bot configuration](docs/guides/BotConfig.md)
+8. [Assign the Assessment Admin permission set to your user](docs/guides/AdminPermSet.md)
+9. [Open the Assessment Manager app](docs/guides/AssessmentManagerApp.md)
+10. [Create and test your first Assessment](docs/guides/HelloWorldAssessment.md)
+11. [Schedule Assessment Session apex jobs](docs/guides/AssessmentScheduledJob.md)
 
 ## User Guide
 

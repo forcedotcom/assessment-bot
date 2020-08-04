@@ -37,4 +37,15 @@
 ![Embedded](/docs/images/embedded-service/snapin-enable-guest-api.png?raw=true)
 
 
-Next Step, [Create en Embedded Channel Menu](EmbeddedChatMenu.md)
+## Get the Embedded Deployment Code
+
+- In the Embedded Deployment details, click the `Get Code` button under the Embedded Service Code Snippets section.
+
+![Embedded](/docs/images/embedded-service/snapin-deployment-code.png?raw=true)
+
+- Copy the highlighted params as they will need to be stored in a custom setting in the next step
+
+![Embedded](/docs/images/embedded-service/snapin-deployment-code-params.png?raw=true)
+
+
+Next Step, [Update Assessment Manager custom setting](CustomSetting.md)

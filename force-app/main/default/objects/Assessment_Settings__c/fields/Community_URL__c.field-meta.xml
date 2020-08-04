@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
-    <fullName>Live_Agent_URL__c</fullName>
+    <fullName>Community_URL__c</fullName>
     <externalId>false</externalId>
-    <label>Live Agent URL</label>
+    <label>Community URL</label>
     <length>255</length>
     <required>true</required>
     <trackTrending>false</trackTrending>

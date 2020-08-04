@@ -7,29 +7,40 @@
     
     <head>
         <title>Assessment Definition Preview</title>
-        <script type='text/javascript' src='https://service.force.com/embeddedservice/menu/fab.min.js'></script>
     </head>
 
     <body>
 
+		<script type="text/javascript" src="https://service.force.com/embeddedservice/5.0/esw.min.js"></script>
         <script>
             var initESW = function(gslbBaseURL) {
-                // Required if you want labels in a language that’s different from your user’s context.
-                //embedded_svc.menu.settings.language = ''; //For example, enter 'en' or 'en-US'
-                embedded_svc.menu.chat.settings.extraPrechatFormDetails = [{"label":"Assessment Definition","value":"{!Assessment_Definition__c.Assessment_Definition_Id__c}", "transcriptFields": ["Source_Assessment_Definition__c"]}];
-                // Chat server endpoint URLs.
-                embedded_svc.menu.init(
+                embedded_svc.settings.displayHelpButton = true; //Or false
+                embedded_svc.settings.language = ''; //For example, enter 'en' or 'en-US'
+                
+                embedded_svc.settings.extraPrechatFormDetails = [{"label":"Assessment Definition","value":"{!Assessment_Definition__c.Assessment_Definition_Id__c}", "transcriptFields": ["Source_Assessment_Definition__c"]}];
+                embedded_svc.settings.enabledFeatures = ['LiveAgent'];
+                embedded_svc.settings.entryFeature = 'LiveAgent';
+                
+                embedded_svc.init(
                     '{!JSENCODE(orgUrl)}',
-                    '{!JSENCODE(laEndpoint)}',
+                    '{!JSENCODE(communityURL)}',
                     gslbBaseURL,
                     '{!JSENCODE(orgId)}',
-                    '{!JSENCODE(eswChannelMenuName)}'
+                    '{!JSENCODE(embeddedServiceDevName)}',
+                    {
+                        baseLiveAgentContentURL: '{!JSENCODE(laContentEndpoint)}',
+                        deploymentId: '{!JSENCODE(deploymentId)}',
+                        buttonId: '{!JSENCODE(buttonId)}',
+                        baseLiveAgentURL: '{!JSENCODE(laEndpoint)}',
+                        eswLiveAgentDevName: '{!JSENCODE(eswLiveAgentDevName)}',
+                        isOfflineSupportEnabled: false
+                    }
                 );
             };
-
-            if (!window.embedded_svc || !window.embedded_svc.menu) {
+            
+            if (!window.embedded_svc) {
                 var s = document.createElement('script');
-                s.setAttribute('src', '{!JSENCODE(orgUrl)}/embeddedservice/menu/fab.min.js');
+                s.setAttribute('src', '{!JSENCODE(orgUrl)}/embeddedservice/5.0/esw.min.js');
                 s.onload = function() {
                     initESW(null);
                 };
