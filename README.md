@@ -53,18 +53,18 @@ Once you go to that link, it will guide you through the setup process. Select th
 
 Once you've installed the Conversation Assessments package, you will need to configure the complete the following steps for the package to fully work.
 
-0. [Update Page Layout Assignment](docs/guides/LayoutAssignment.md)
-1. [Enable Omni-Channel](docs/guides/Omni.md)
-2. [Create a Chat Deployment and Chat Button](docs/guides/Chat.md)
-3. [Enable Communities and create a Community](docs/guides/Communities.md)
-4. [Create an Embedded Service Deployment](docs/guides/EmbeddedService.md)
-5. [Update Assessment Manager custom setting](docs/guides/CustomSetting.md)
-6. [Add a new CORS entry in your org](docs/guides/CORS.md)
-7. [Update the Assessment Bot configuration](docs/guides/BotConfig.md)
-8. [Assign the Assessment Admin permission set to your user](docs/guides/AdminPermSet.md)
-9. [Open the Assessment Manager app](docs/guides/AssessmentManagerApp.md)
-10. [Create and test your first Assessment](docs/guides/HelloWorldAssessment.md)
-11. [Schedule Assessment Session apex jobs](docs/guides/AssessmentScheduledJob.md)
+1. [Update Page Layout Assignment](docs/guides/LayoutAssignment.md)
+2. [Enable Omni-Channel](docs/guides/Omni.md)
+3. [Create a Chat Deployment and Chat Button](docs/guides/Chat.md)
+4. [Enable Communities and create a Community](docs/guides/Communities.md)
+5. [Create an Embedded Service Deployment](docs/guides/EmbeddedService.md)
+6. [Update Assessment Manager custom setting](docs/guides/CustomSetting.md)
+7. [Add a new CORS entry in your org](docs/guides/CORS.md)
+8. [Update the Assessment Bot configuration](docs/guides/BotConfig.md)
+9. [Assign the Assessment Admin permission set to your user](docs/guides/AdminPermSet.md)
+10. [Open the Assessment Manager app](docs/guides/AssessmentManagerApp.md)
+11. [Create and test your first Assessment](docs/guides/HelloWorldAssessment.md)
+12. [Schedule Assessment Session apex jobs](docs/guides/AssessmentScheduledJob.md)
 
 ## User Guide
 
