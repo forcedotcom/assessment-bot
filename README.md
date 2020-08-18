@@ -6,7 +6,7 @@ Assessments represent a conversation where a score, recommendation or feedback i
 
 Assessment definition decision trees can be configured through Custom Objects included in this package and a pre-configured Einstein Bot will be able to interpret and serve the assessment definition.
 
-![Package Preview](/docs/images/preview/preview.gif?raw=true)
+![Package Preview](/docs/images/preview/preview2.gif?raw=true)
 
 Overview video available [here](https://salesforce.vidyard.com/watch/5GdfG386v9uC11TiofhMqr?).
 
