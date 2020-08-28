@@ -8,7 +8,7 @@ Assessment definition decision trees can be configured through Custom Objects in
 
 ![Package Preview](/docs/images/preview/preview2.gif?raw=true)
 
-Overview video available [here](https://salesforce.vidyard.com/watch/5GdfG386v9uC11TiofhMqr?).
+Overview video available [here](https://salesforce.vidyard.com/watch/Nu4RcLeQrdy1chtqjnXHWs?).
 
 ## Setup Instructions
 
