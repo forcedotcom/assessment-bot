@@ -1,6 +1,7 @@
 {
   "orgName": "Rico",
   "edition": "Enterprise",
+  "release": "Preview",
   "features": [
       "Communities",
       "Sites",
@@ -14,8 +15,7 @@
       "ForceComPlatform",
       "AddCustomTabs:20",
       "AddCustomObjects:20",
-      "AddCustomApps:20",
-      "ChatbotEinsteinPilot"
+      "AddCustomApps:20"
   ],
   "settings": {
       "liveAgentSettings": {
